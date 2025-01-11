@@ -20,6 +20,10 @@
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
+  .container-carousel{
+    width: 360px;
+    margin: 0 auto;
+  }
   .card_img{
     width: 70px;
   }
