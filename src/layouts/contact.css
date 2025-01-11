@@ -52,7 +52,6 @@ input{
     border-radius: 8px;
     border: 1px solid #E05330;
     opacity: 0px;
-
 }
 
 .label-menssage{
@@ -84,4 +83,60 @@ input::placeholder{
     font-style: italic;
     font-weight: 400;
     line-height: 17.58px;
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .title-form{
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: -0.0222em;
+        margin-top: 4%;
+    }
+    .subtitle-form{
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 3%;
+    }
+    .form{
+        width: 100%;
+    }
+    .item-form-container{
+       
+        padding: 20px;
+        width: 100%;
+    }
+    input{
+        width: 330px;
+    }
+
+    .boton-container{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 12%;
+    }
+
+
+}
+
+/* Teléfonos grandes (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Estilos para teléfonos grandes o phablets */
+
+}
+
+/* Tablets en orientación vertical (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos para tablets en orientación vertical */
+}
+
+/* Tablets en orientación horizontal (1025px - 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Estilos para tablets en orientación horizontal o laptops pequeñas */
+
+}
+
+/* Pantallas de escritorio pequeñas (1281px - 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  /* Estilos para pantallas de escritorio pequeñas */
+ 
 }

@@ -64,3 +64,66 @@
 .work-img{
     margin-left: 4%;
 }
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .work-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+    .work-section-text{
+        font-family: Roboto Flex;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 35.16px;
+        text-align: left;
+        margin-bottom: 10%;
+    }
+    .work-section_img{
+        width: 200px;
+    }
+}
+
+/* Teléfonos grandes (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Estilos para teléfonos grandes o phablets */
+  .work-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        width: 100%;
+    }
+    .work-section-text{
+        font-family: Roboto Flex;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 35.16px;
+        text-align: left;
+        margin-bottom: 10%;
+    }
+    .work-section_img{
+        width: 300px;
+    }
+
+}
+
+/* Tablets en orientación vertical (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos para tablets en orientación vertical */
+}
+
+/* Tablets en orientación horizontal (1025px - 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Estilos para tablets en orientación horizontal o laptops pequeñas */
+
+}
+
+/* Pantallas de escritorio pequeñas (1281px - 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  /* Estilos para pantallas de escritorio pequeñas */
+ 
+}

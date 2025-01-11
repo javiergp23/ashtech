@@ -35,7 +35,6 @@
 
 .img-about-card{
     width: 300px;
-    
 }
 
 .text-about-card{
@@ -47,7 +46,6 @@
     text-align: left;
     color: #0F298B;
     text-align: center;
-
 }
 
 .about-section{
@@ -76,7 +74,6 @@
     color: #E05330;
 }
 
-
 .space-text{
     margin-bottom: 5%;
 }
@@ -84,4 +81,91 @@
 .about-section-text-container{
     width: 600px;
     margin-left: 8%;
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .about-container-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5%;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .img-about-card{
+        width: 100px;
+    }
+
+    .text-about-card{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 61.25px;  
+    }
+    .about-section_img{
+        width: 200px;
+        height: 300px;
+        margin-left: 4%;
+    }
+    .about-section-text-container{
+        display: none;
+    }
+}
+
+/* Teléfonos grandes (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Estilos para teléfonos grandes o phablets */
+    .about-container-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5%;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .img-about-card{
+        width: 100px;
+    }
+
+    .text-about-card{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 61.25px;
+    }
+    .about-section_img{
+        width: 300px;
+        height: 400px;
+        margin-left: 4%;
+    }
+    .about-section-text{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 35.16px;
+        text-align: left;
+    }
+    .about-section-text-container{
+        width: 100%;
+        margin-left: 8%;
+    }
+    
+}
+
+/* Tablets en orientación vertical (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos para tablets en orientación vertical */
+}
+
+/* Tablets en orientación horizontal (1025px - 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Estilos para tablets en orientación horizontal o laptops pequeñas */
+
+}
+
+/* Pantallas de escritorio pequeñas (1281px - 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  /* Estilos para pantallas de escritorio pequeñas */
+ 
 }

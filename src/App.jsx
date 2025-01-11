@@ -6,10 +6,9 @@ import WorkWithUs from './layouts/WorkWithUs.jsx'
 import Testimonials from './layouts/Testimonials.jsx'
 import Contact from './layouts/Contact.jsx'
 import Footer from './layouts/Footer.jsx'
+import Whatsapp from './components/Whatsapp.jsx'
 
 function App() {
-  
-
   return (
     <>
       <HeroSection/>
@@ -19,6 +18,7 @@ function App() {
       <Testimonials/>
       <Contact/>
       <Footer/>
+      <Whatsapp/>
     </>
   )
 }
