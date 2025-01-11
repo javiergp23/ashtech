@@ -1,0 +1,20 @@
+ /* CAROUSEL */
+ .container-carousel{
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.carousel-img{
+ position: absolute;
+  top: -50px; /* Ajusta esta distancia para que la imagen sobresalga */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  z-index: 2;
+}

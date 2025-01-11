@@ -1,0 +1,102 @@
+.card{
+    background-color: #ffffff;
+    width: 420px;
+    height: 550px;
+    margin: 1%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    gap: 10px;
+    border: #FF9240 solid 2px;
+}
+
+.card_img{
+    width: 130px;
+    height: 130px;
+}
+
+.card_title{
+    font-family: Space Grotesk;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 45.94px;
+    text-align: center;
+    color: #0F298B;
+    margin-bottom: 20px;
+}
+
+.card_paragraph{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.13px;
+    text-align: center;
+    color: black;
+    margin-bottom: 60px;
+}
+
+/* MODAL */
+
+.modal-header {
+    border-bottom: none; 
+}
+.modal-container{
+    overflow: hidden; 
+    position: relative;
+}
+
+.modal-container-style{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    padding: 30px;
+}
+
+.modal-container-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-modal{
+    width: 250px;
+    height: 245px;
+}
+.title-modal{
+    font-family: Space Grotesk;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.0222em;
+    text-align: left;
+
+}
+.paragraph-modal{
+    font-family: Roboto Flex;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+}
+
+.button-modal{
+    font-family: Roboto Flex;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 29.3px;
+    text-align: left;
+    background-color: #E05330;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    border: none;
+    margin-bottom: 30px;
+    margin-right: 6%;
+}
+
+.containet-button-modal{
+    display: flex;
+    justify-content: end;
+}
