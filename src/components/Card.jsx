@@ -23,6 +23,12 @@ export default function Card({id, title, img, paragraph, imgModal, titleModal, p
                     <div className="modal-container-img">
                         <img className="img-modal" src={imgModal} alt="" />
                     </div>
+                    <div className='details-responsive'>
+                        <img className="img-modal" src={imgModal} alt="" />
+                        <h1 className="title-model_reponsive">
+                            {titleModal}
+                        </h1>
+                    </div>
                     <div>
                         <h1 className="title-modal">
                             {titleModal}

@@ -62,9 +62,13 @@
         background-color: #ffffffe1;
     }
     .nav-item-responsive{
-        color: black
+        color: #0F298B !important;
+        font-weight: 700;
     }
-
+    .navbar-toggler {
+        background-color: #ffffff; 
+        border-radius: 20px;
+    }
   }
   
   /* Teléfonos grandes (481px - 767px) */

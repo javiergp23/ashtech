@@ -21,7 +21,7 @@ export default function NavBar() {
                                 <a className="nav-link text-link-color nav-item-responsive" href="#">Testimonios</a>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link text-link-colo nav-item-responsiver" href="#">Trabaja con Nosotros</a>
+                                <a className="nav-link text-link-color nav-item-responsive" href="#">Trabaja con Nosotros</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link text-link-color nav-item-responsive" href="#">Contacto</a>
