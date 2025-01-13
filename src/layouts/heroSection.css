@@ -113,7 +113,6 @@
 .frame-1{
     width: 364px;
     height: 336px;
-    
 }
 
 .text-frame{
@@ -122,15 +121,15 @@
     font-weight: 400;
     font-size: 30px;
     margin-left: 5%;
-    
 }
-
+.hero-section_img-responsive{
+    display: none;
+}
 
 @media (min-width: 321px) and (max-width: 480px) {
     .hero-section{
-        height: 100vh;
+        height: 600px;
         margin-bottom: 10%;
-       
     }
     
     .nav-bar{
@@ -149,6 +148,7 @@
     
     .img-logo{
         margin-right: 6%;
+        width: 240px;
     }
     
     .select-lang{
@@ -163,95 +163,80 @@
     
     .hero-section-content{
         display: flex;
-        margin: 0 0 0 12%;
+        margin: auto;
     }
     
     .hero-section_title{
-        font-family: Sarpanch;
-        font-size: 50px;
-        font-weight: 400;
-        line-height: 70px;
-        text-align: left;
-        color: #ffffff;
-        margin-bottom: 12%;
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 10%;
+        margin-bottom: 20%;
     }
     
     .hero-section_subtitle{
-        font-family: Roboto Flex;
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 35.16px;
-        text-align: left;
-        color: #ffffff;
-        margin-bottom: 12%;
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 10%;
+        margin-bottom: 30%;
     }
     
     .button-hero-section{
-        font-family: Roboto Flex;
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 29.3px;
-        text-align: left;
-        background-color: #E05330;
-        color: #ffffff;
-        border-radius: 12px;
-        padding: 15px;
-        border: none;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 12px;
     }
     
     .hero-section_img{
-        margin-left: 12%;
+        margin-left: 10%;
     }
     
     .hero-section_img-1{
-        width: 90%;
+        display: none;
+    }
+    .hero-section_img-responsive{
+        display: block;
     }
     
     .hero-content-two{
-        margin-top: 35px;
+        margin-top: 12%;
         margin-left: 12%;
     }
     .tiitle-two{
-        color: #0F298B;
-        font-family: Space Grotesk;
-        font-size: 48px;
+        font-size: 20px;
         font-weight: 700;
         text-align: center;
     }
     .subtiitle-two{
-        font-family: Space Grotesk;
-        font-size: 32px;
-        font-weight: 400;
+        font-size: 16px;
         text-align: center;
-        margin-bottom: 12%;
+        margin-bottom: 8%;
     }
     
     .carousel{
-        width: 70%;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        margin-bottom: 20%;
+        margin-bottom: 5%;
     }
     
     .frame-1{
-        width: 364px;
-        height: 336px;
-        
+        width: 80px;
+        height: 100px;
     }
     
     .text-frame{
-        width: 230px;
-        font-family: Roboto Flex;
+        width: 100%;
         font-weight: 400;
         font-size: 14px;
-        margin-left: 5%;
-        
+        text-align: left;
+        margin: 0;
+        padding: 20px;
     }
-    .frame-1{
-        width: 30px;
-        height: 220px;
-    
+
+    .frame-container-img{
+        width: 250px;
+        padding: 10px;
+        margin-left: 8%;
+    }
+    .elements-hero-section{
+        margin-left: 8%;
     }
 }
 

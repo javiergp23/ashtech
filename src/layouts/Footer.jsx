@@ -26,9 +26,24 @@ export default function Footer(){
                     <p className="text-footer-links">ejemplo@gmail.com</p>
                 </div>
                 <div className='container-item-res-mobile'>
-                    <a className='container-item-res-mobile_item' href="">Soporte</a>
-                    <a className='container-item-res-mobile_item' href="">Redes sociales</a>
-                    <a className='container-item-res-mobile_item' href="">Contacto</a>
+                    <select className="bg-link custom-select" aria-label="Default select example">
+                        <option className='container-item-res-mobile_item' selected>Soporte</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select className="bg-link custom-select" aria-label="Default select example">
+                        <option className='container-item-res-mobile_item' selected>Redes sociales</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select className="bg-link custom-select" aria-label="Default select example">
+                        <option className='container-item-res-mobile_item' selected>Contacto</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
                 </div>
             </div>
         </>
