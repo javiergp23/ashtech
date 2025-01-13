@@ -26,24 +26,37 @@ export default function Footer(){
                     <p className="text-footer-links">ejemplo@gmail.com</p>
                 </div>
                 <div className='container-item-res-mobile'>
-                    <select className="bg-link custom-select" aria-label="Default select example">
-                        <option className='container-item-res-mobile_item' selected>Soporte</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                    <select className="bg-link custom-select" aria-label="Default select example">
-                        <option className='container-item-res-mobile_item' selected>Redes sociales</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                    <select className="bg-link custom-select" aria-label="Default select example">
-                        <option className='container-item-res-mobile_item' selected>Contacto</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
+                    <div className="dropdown">
+                        <button className="btn btn-secondary dropdown-toggle bg-link custom-select" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Soporte
+                        </button>
+                        <ul className="dropdown-menu">
+                            <li><a className="link-nav-footer" href="#services">Servicios</a></li>
+                            <li><a className="link-nav-footer" href="#about">Sobre nosotros</a></li>
+                            <li><a className="link-nav-footer" href="#testimonios">Testimonios</a></li>
+                            <li><a className="link-nav-footer" href="#work">Trabaja con nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div className="dropdown">
+                        <button className="btn btn-secondary dropdown-toggle bg-link custom-select" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Redes Sociales
+                        </button>
+                        <ul className="dropdown-menu">
+                            <li className='list-nav-footer'><a href="#" className='link-nav-footer'><img className="logo-social-footer" src="/src/assets/instagram-logo-24.png" alt="" />Instagram</a></li>
+                            <li className='list-nav-footer'><a href="#" className='link-nav-footer'><img className="logo-social-footer" src="/src/assets/linkedin-logo-24.png" alt="" />Linkedin</a></li>
+                            <li className='list-nav-footer'><a href="#" className='link-nav-footer'><img className="logo-social-footer" src="/src/assets/facebook-logo-24.png" alt="" />Facebook</a></li>
+                            <li className='list-nav-footer'><a href="#" className='link-nav-footer'><img className="logo-social-footer" src="/src/assets/youtube-logo-24.png" alt="" />Youtube</a></li>
+                        </ul>
+                    </div>
+                    <div className="dropdown">
+                        <button className="btn btn-secondary dropdown-toggle bg-link custom-select" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contacto
+                        </button>
+                        <ul className="dropdown-menu">
+                            <li><a className="dropdown-item" href="#">011 34893455</a></li>
+                            <li><a className="dropdown-item" href="#">ejemplo@gmail.com</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </>

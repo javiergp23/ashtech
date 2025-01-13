@@ -10,35 +10,35 @@ export default function NavBar() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav links-nav mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <a className="nav-link active text-link-color" aria-current="page" href="#">Servicios</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link text-link-color" href="#">Sobre Nosotros</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link text-link-color" href="#">Testimonios</a>
-                        </li>
-                        <li className="nav-item">
-                         <a className="nav-link text-link-color" href="#">Trabaja con Nosotros</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link text-link-color" href="#">Contacto</a>
-                        </li>
-                        <li className="nav-item dropdown dropdow-idioma">
-                            <a className="nav-link dropdown-toggle text-link-color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Idioma
-                        </a>
-                        <ul className="dropdown-menu dropdow-idioma">
-                            <li><a className="dropdown-item text-idioma-color" href="#">Español</a></li>
-                            <li><hr className="dropdown-divider"/></li>
-                            <li><a className="dropdown-item text-idioma-color" href="#">Ingles</a></li>
+                        <ul className="navbar-nav links-nav links-nav-responsive mb-2 mb-lg-0">
+                            <li className="nav-item ">
+                                <a className="nav-link active text-link-color nav-item-responsive" aria-current="page" href="#">Servicios</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link text-link-color nav-item-responsive" href="#">Sobre Nosotros</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link text-link-color nav-item-responsive" href="#">Testimonios</a>
+                            </li>
+                            <li className="nav-item">
+                            <a className="nav-link text-link-colo nav-item-responsiver" href="#">Trabaja con Nosotros</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link text-link-color nav-item-responsive" href="#">Contacto</a>
+                            </li>
+                            <li className="nav-item dropdown dropdow-idioma">
+                                <a className="nav-link dropdown-toggle text-link-color nav-item-responsive" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Idioma
+                            </a>
+                            <ul className="dropdown-menu dropdow-idioma">
+                                <li><a className="dropdown-item text-idioma-color nav-item-responsive" href="#">Español</a></li>
+                                <li><hr className="dropdown-divider"/></li>
+                                <li><a className="dropdown-item text-idioma-color nav-item-responsive" href="#">Ingles</a></li>
+                            </ul>
+                            </li>
+                            <li className="nav-item">
+                            </li>
                         </ul>
-                        </li>
-                        <li className="nav-item">
-                        </li>
-                    </ul>
                     </div>
                 </div>
             </nav>

@@ -45,6 +45,26 @@
         margin: 0;
         padding: 2px;
     }
+    .text-link-color{
+        font-size: 18px;
+    }
+    .navbar{
+        position: relative;
+        z-index: 1050; 
+      }
+      
+    .navbar-collapse{
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        right: 0;
+        z-index: 1040; 
+        background-color: #ffffffe1;
+    }
+    .nav-item-responsive{
+        color: black
+    }
+
   }
   
   /* Teléfonos grandes (481px - 767px) */
