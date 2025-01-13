@@ -3,8 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
-    
 }
 
 .title-form{
@@ -85,17 +83,24 @@ input::placeholder{
     line-height: 17.58px;
 }
 
+
 @media (min-width: 321px) and (max-width: 480px) {
+
+    .container-form-component{
+        display: block;
+    }
     .title-form{
         font-size: 22px;
         font-weight: 700;
         letter-spacing: -0.0222em;
         margin-top: 4%;
+        margin-left: 15%;
     }
     .subtitle-form{
         font-size: 14px;
         font-weight: 400;
         margin-bottom: 3%;
+        margin-left: 15%
     }
     .form{
         width: 100%;

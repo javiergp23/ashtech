@@ -58,20 +58,29 @@
     padding: 15px;
     border: none;
     margin-bottom: 20%;
-    
 }
 
 .work-img{
     margin-left: 4%;
 }
 
+.work-section-responsive{
+    display: none;
+}
+
 @media (min-width: 321px) and (max-width: 480px) {
+    .work-title{
+        display: none;
+    }
+    .work-section-text_responsive-none{
+        display: none;
+    }
     .work-section{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 5%;
+        margin-top: 0%;
     }
     .work-section-text{
         font-family: Roboto Flex;
@@ -82,8 +91,52 @@
         margin-bottom: 10%;
     }
     .work-section_img{
-        width: 200px;
+        display: none;
     }
+    .work-section_img-responsive{
+        width: 215px;
+        padding: 4px;
+    }
+    .work-section-responsive{
+        display: block;
+        margin-left: 5%;
+    }
+    .work-section-text_responsive-title{
+        font-size: 20px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 35px;
+    }
+    .work-section-text_responsive-subtitle{
+        width: 320px;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        line-height: 20px;
+    }
+    .work-section-text{
+        width: 190px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .sumate{
+        width: 190px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: left;
+        margin-bottom: 10%;
+        text-align: left;
+    }
+    .button-work-with-us{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 15.3px;
+        padding: 15px;
+        margin-bottom: 20%;
+        margin-right: 32%;
+    }
+    
 }
 
 /* Teléfonos grandes (481px - 767px) */

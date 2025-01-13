@@ -13,6 +13,8 @@ export default function Testimonials(){
                 <div>
                     <CardTestimonios/>
                 </div>
+                <img className='img-background img-background_1' src="/src/assets/engranaje1.png" alt="engranaje-1" />
+                <img className='img-background img-background_2' src="/src/assets/engranaje2.png" alt="engranaje-2" />
             </div>
         </>
     )

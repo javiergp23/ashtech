@@ -28,6 +28,7 @@ export default function About(){
             <div className="about-section">
                 <div>
                     <img className="about-section_img" src="/src/assets/img-section-about.png" alt="img-section-about" />
+                    <img className="about-section_img-responsive" src="/src/assets/img-about-rspv.png" alt="img-section-about-responsive" />
                 </div>
                 <div className="about-section-text-container">
                     <p className="about-section-text">
@@ -39,7 +40,20 @@ export default function About(){
 
                         <span className="text-span">Estamos para ayudarte a crear el exito de tus sueños. </span>
                     </p>
+                    <p className='about-section-text-responsive'>
+                    Somos una empresa que tiene como <span className="text-span">objetivo el crecimiento de nuestros clientes</span> mediante el desarrollo de software a la medida, la provisión de recursos calificados y la gestión integral de proyectos.
+                    </p>
+                    
                 </div>
+            </div>
+            <div className='responsive-section'>
+                <p className='about-section-text-responsive-two'> 
+                    Nos comprometemos a entregar resultados excepcionales, ya que trabajamos de la mano de la innovación y el compromiso hacia nuestros clientes. <br className="space-text"/> <br />
+
+                    Tenemos una meta, ser tu socio lider en soluciones tecnologias innovadoras transformando el futuro de tu empresa en su mejor version. <br className="space-text"/> <br />
+
+                    <span className="text-span">Estamos para ayudarte a crear el exito de tus sueños. </span>
+                </p>
             </div>
         </>
     )
