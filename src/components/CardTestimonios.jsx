@@ -1,6 +1,5 @@
+import { useRef } from 'react';
 import './cardTestimonios.css'
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Importa los estilos del carrusel
 
 const testimonials = [
     {
@@ -27,40 +26,46 @@ const testimonials = [
   ];
 
 export default function CardTestimonios(){
+    const carouselRef = useRef(null);
+
+    const handleScroll = (direction) => {
+      const container = carouselRef.current;
+      const scrollAmount = container.offsetWidth; // Desplazar una pantalla completa
+      if (direction === "left") {
+        container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      } else {
+        container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      }
+    };
+
     return(
         <>
-            <div className="container-carousel" >
-                <Carousel className="carouselContainer" showArrows={false} infiniteLoop={true} showThumbs={false} showIndicators={false} 
-                showStatus={false}>
-                {testimonials.map((testimonial) => (
-                    <div className="card-content"
-                    key={testimonial.id}
-                    style={{ padding: "20px", textAlign: "center", position: "relative", overflow: "visible",}}
-                    >
-                    <img className="carousel-img"
+            <div className="carousel-container">
+                <button
+                    className="carousel-button left"
+                    onClick={() => handleScroll("left")}
+                >
+                    &#8592; {/* Flecha izquierda */}
+                </button>
+                <div className="carousel" ref={carouselRef}>
+                    {testimonials.map((testimonial) => (
+                    <div className="carousel-item" key={testimonial.id}>
+                        <img
+                        className="carousel-img"
                         src={testimonial.image}
                         alt={testimonial.name}
-                        style={{
-                        borderRadius: "50%",
-                        width: "100px",
-                        height: "100px",
-                        objectFit: "cover",
-                        position: "absolute",
-                        top: "-80px",
-                        left: "50%",
-                        transform: "translateX(-50%)", 
-                        border: "4px solid white",
-                        }}
-                    />
-                    <p style={{ margin: "10px 0", fontStyle: "italic", color: "white" }}>
-                        {testimonial.description}
-                    </p>
-                    <h3 style={{ margin: "0", fontWeight: "bold", color: "#FF9240"}}>
-                        {testimonial.name}
-                    </h3>
+                        />
+                        <p className="testimonial-description">{testimonial.description}</p>
+                        <h3 className="testimonial-name">{testimonial.name}</h3>
                     </div>
-                ))}
-                </Carousel>
+                    ))}
+                </div>
+                <button
+                    className="carousel-button right"
+                    onClick={() => handleScroll("right")}
+                >
+                    &#8594; {/* Flecha derecha */}
+                </button>
             </div>
         </>
     )

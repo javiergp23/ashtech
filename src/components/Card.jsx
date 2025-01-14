@@ -43,10 +43,6 @@ export default function Card({id, title, img, paragraph, imgModal, titleModal, p
                         Consultar
                     </button>
                 </div>
-                {/* <div className="modal-footer">
-                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" className="btn btn-primary">Understood</button>
-                </div> */}
                 </div>
             </div>
             </div>

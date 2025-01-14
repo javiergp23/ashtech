@@ -1,5 +1,5 @@
 import './services.css';
-import Card from '../components/Card';
+import Carousel from '../components/Carousel';
 
 export default function Services() {
     return(
@@ -13,7 +13,9 @@ export default function Services() {
                 </p>
             </div>
             <div className="services-cards">
-                <Card 
+                <Carousel/>
+                
+                {/* <Card 
                     id="1"
                     title="Gestión de proyectos" 
                     img="/src/assets/gestion.png" 
@@ -48,7 +50,7 @@ export default function Services() {
                     imgModal="/src/assets/thrid.gif"
                     titleModal="Servicio Tecnico"
                     paragraphModal="texto descriptivo"
-                />
+                /> */}
             </div>
         </>
     )
