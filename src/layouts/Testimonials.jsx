@@ -1,5 +1,5 @@
 import './testimonials.css'
-import CardTestimonios from '../components/CardTestimonios.jsx'
+import CarouselTestimonial from '../components/CaruselTestimonial.jsx'
 
 export default function Testimonials(){
     return(
@@ -10,8 +10,8 @@ export default function Testimonials(){
                     <h1 className="test-title-two">Nuestros clientes</h1>
                     <h2 className="test-title-three">Te compartimos sus experiencias</h2>
                 </div>
-                <div>
-                    <CardTestimonios/>
+                <div className='carousel-testimonial-container'>
+                    <CarouselTestimonial/>
                 </div>
                 {/* <img className='img-background img-background_1' src="/src/assets/engranaje1.png" alt="engranaje-1" />
                 <img className='img-background img-background_2' src="/src/assets/engranaje2.png" alt="engranaje-2" /> */}

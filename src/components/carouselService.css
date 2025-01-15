@@ -53,8 +53,8 @@
 @media (min-width: 321px) and (max-width: 480px) {
     .carousel-container-serv {
         position: relative;
-        width: 80%;
-        margin: 0 auto;
+        width: 98%;
+        margin: 0 15px 0 15px;
         overflow: hidden;
       }
       .carousel-serv {
@@ -67,12 +67,9 @@
         display: none; 
       }
       .carousel-item-serv {
-        
-        
         display: flex;
         align-items: center;
         justify-content: center;
-      
       }
 }
 

@@ -1,0 +1,140 @@
+.carousel-container-test {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: visible;
+}
+.carousel-test {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  overflow: visible;
+}
+.carousel-test::-webkit-scrollbar {
+  display: none; 
+}
+.carousel-item-test {
+  min-width: 360px;
+  height: 180px;
+  margin: 0 10px;
+  background-color: #ffffff21;
+  border: solid 2px #ffffff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-button.left {
+  left: 10px;
+}
+.carousel-button.right {
+  right: 10px;
+}
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: #d97632;
+}
+
+.carousel-img-test{
+  width: 55px;
+  height: 55px;
+  border: #ffffff solid 2px;
+  border-radius: 50%;
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .carousel-container-test {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .carousel-test {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
+
+  }
+  .carousel-test::-webkit-scrollbar {
+    display: none; 
+  }
+  .carousel-item-test {
+    min-width: 360px;
+    height: 170px;
+    margin: 0 10px;
+    background-color: #ffffff21;
+    border: solid 2px #ffffff;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   
+  }
+  .carousel-img-test{
+    width: 55px;
+    height: 55px;
+    border: #ffffff solid 2px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    top: -35px;
+  }
+  .testimonial-description{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 20px 0 20px 0;
+    font-family: Roboto flex;
+  }
+  .testimonial-name{
+    color: rgba(255, 146, 64, 1);
+    font-weight: 700;
+    font-family: Roboto;
+    line-height: 26px;
+  }
+}
+
+/* Teléfonos grandes (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Estilos para teléfonos grandes o phablets */
+}
+
+/* Tablets en orientación vertical (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos para tablets en orientación vertical */
+}
+
+/* Pantallas de escritorio pequeñas (1281px - 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  /* Estilos para pantallas de escritorio pequeñas */
+}

@@ -109,8 +109,9 @@
     .card{
         width: 200px;
         height: 270px;
-        margin: 1%;
-        padding: 10%;
+        margin: auto;
+        padding: 55px 22px 55px 22px;
+        
     }
     .card_img{
         width: 70px;
@@ -126,6 +127,9 @@
     }
     .title-modal{
         display: none;
+    }
+    .card_paragraph{
+     display: none;    
     }
     .img-modal{
         width: 75px;
