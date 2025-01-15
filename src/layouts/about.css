@@ -94,6 +94,7 @@
 
 @media (min-width: 321px) and (max-width: 480px) {
     .about-container{
+        margin-top: 12%;
         margin-bottom: 1%;
     }
     .title-about{

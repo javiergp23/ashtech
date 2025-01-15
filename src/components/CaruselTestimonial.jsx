@@ -28,19 +28,23 @@ export default function CarouselTestimonial() {
   return (
     <>
       <div className="carousel-container-test">
-        <div className="carousel-test">
-        {testimonials.map((testimonial) => (
-          <div className="carousel-item-test" key={testimonial.id}>
-            <img
-              className="carousel-img-test"
-              src={testimonial.image}
-              alt={`Imagen de ${testimonial.name}`}
-            />
-            <p className="testimonial-description">{testimonial.description}</p>
-            <h3 className="testimonial-name">{testimonial.name}</h3>
+        
+          <div className="carousel-test">
+          {testimonials.map((testimonial) => (
+            
+              <div className="carousel-item-test" key={testimonial.id}>
+                <div className="container-carousel-test__responsive">
+                  <img
+                    className="carousel-img-test"
+                    src={testimonial.image}
+                    alt={`Imagen de ${testimonial.name}`}
+                  />
+                  <p className="testimonial-description">{testimonial.description}</p>
+                  <h3 className="testimonial-name">{testimonial.name}</h3>
+              </div>
+            </div>
+          ))}
           </div>
-        ))}
-        </div>
       </div>
     </>
   );
