@@ -4,7 +4,7 @@ import './workWithUs.css'
 export default function WorkWithUs(){
     return(
         <>  
-            <div className='work-section-responsive'>
+            <div className='work-section-responsive' id='work'>
                 <h1 className='work-section-text_responsive-title'>
                     ¿Te gustaria trabajar con nosotros?
                 </h1>
@@ -13,7 +13,7 @@ export default function WorkWithUs(){
                 </p>
             </div>
             <div className="work-section">
-                <div className="work-section-text-container" id="work">
+                <div className="work-section-text-container" >
                     <h1 className="work-title">¿Te gustaria trabajar con nosotros?</h1>
                     <p className="work-section-text">
                         <span className='work-section-text_responsive-none'>Unite a un equipo innovador y dinamico donde tu crecimiento profesional es una prioridad.</span> <br /><br />

@@ -9,7 +9,7 @@ export default function HeroSection() {
                 <div className='elements-hero-section'>
                     <h1 className="hero-section_title">Codificamos el <br /> futuro de tu éxito.</h1>
                     <p className="hero-section_subtitle">La tecnología que necesitas, <br /> a alcace de tu mano.</p>
-                    <button className="button-hero-section">Ver servicios</button>
+                    <a href='#services' className="button-hero-section">Ver servicios</a>
                 </div>
                 <div className="hero-section_img">
                     <img className="hero-section_img-1" src="/src/assets/img-hero-section.png" alt="img-hero-section" />

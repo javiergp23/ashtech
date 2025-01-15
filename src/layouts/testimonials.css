@@ -1,6 +1,7 @@
 .testimonios-container{
     background: linear-gradient(66.22deg, rgba(45, 47, 42, 0.8) 2.7%, rgba(98, 125, 231, 0.8) 100%);
     height: 1000px;
+    margin-top: 20%;
 }
 
 .test-title{

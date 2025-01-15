@@ -115,6 +115,9 @@
         width: 100vw;
         overflow-x: hidden;
     }
+    .about-section{
+        margin-bottom: 10%;
+    }
 
     .img-about-card{
         width: 100px;

@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .image-container {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .rotating-image {
+    width: 100%;
+    height: 100%;
+    animation: rotateImage 1s infinite;
+    transform-origin: center;
+  }
+  
+  .text-container {
+    width: 200px;
+    overflow: hidden;
+    height: 80px; /* Altura del texto visible */
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .animated-text {
+    position: absolute;
+    animation: slideText 5s infinite;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Animación de rotación */
+  @keyframes rotateImage {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  /* Animación de cambio de texto */
+  @keyframes slideText {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    
+  }
+  

@@ -66,8 +66,7 @@ input{
     color: #ffffff;
     border-radius: 8px;
     padding: 10px 25px 10px 25px;
-    border: none;
-    
+    border: none; 
 }
 
 .boton-container{
@@ -88,6 +87,8 @@ input::placeholder{
 
     .container-form-component{
         display: block;
+        margin-top: 20%;
+        margin-bottom: 18%;
     }
     .title-form{
         font-size: 22px;
@@ -123,6 +124,14 @@ input::placeholder{
         display: flex;
         justify-content: flex-end;
         margin-right: 14%;
+    }
+    .button-form{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        padding: 10px 35px 10px 35px;
+
     }
 }
 

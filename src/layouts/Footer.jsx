@@ -33,7 +33,7 @@ export default function Footer(){
                         <ul className="dropdown-menu">
                             <li><a className="link-nav-footer" href="#services">Servicios</a></li>
                             <li><a className="link-nav-footer" href="#about">Sobre nosotros</a></li>
-                            <li><a className="link-nav-footer" href="#testimonios">Testimonios</a></li>
+                            <li><a className="link-nav-footer" href="#about">Testimonios</a></li>
                             <li><a className="link-nav-footer" href="#work">Trabaja con nosotros</a></li>
                         </ul>
                     </div>

@@ -33,6 +33,7 @@
 
     .menu-burger{
         color: #fff !important;
+        width: 60px;
     }
 
     .navbar-toggler-icon{
@@ -68,6 +69,9 @@
     .navbar-toggler {
         background-color: #ffffff; 
         border-radius: 20px;
+        padding: 5px;
+        width: 50px;
+        margin-right: 4%;
     }
   }
   

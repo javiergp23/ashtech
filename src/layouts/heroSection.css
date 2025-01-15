@@ -128,7 +128,7 @@
 
 @media (min-width: 321px) and (max-width: 480px) {
     .hero-section{
-        height: 600px;
+        height: 620px;
         margin-bottom: 26%;
     }
     
@@ -147,8 +147,8 @@
     }
     
     .img-logo{
-        margin-right: 6%;
-        width: 240px;
+        margin-left: 25%;
+        width: 200px;
     }
     
     .select-lang{
@@ -184,6 +184,7 @@
         font-size: 14px;
         line-height: 16px;
         padding: 12px;
+        text-decoration: none;
     }
     
     .hero-section_img{
@@ -195,10 +196,12 @@
     }
     .hero-section_img-responsive{
         display: block;
-    }
+        margin: 0 0 0px 25px;
+
+    }   
     
     .hero-content-two{
-        margin-top: 12%;
+        margin-top: 20%;
         margin-left: 12%;
     }
     .tiitle-two{
@@ -236,7 +239,7 @@
         margin-left: 8%;
     }
     .elements-hero-section{
-        margin-left: 8%;
+        margin-left: 10%;
     }
 }
 

@@ -33,6 +33,7 @@ p{
 @media (min-width: 321px) and (max-width: 480px) {
     .services-container{
         margin-top: 10%;
+        margin-bottom: 5%;
     }
     .services-cards{
       height: 450px;

@@ -12,19 +12,19 @@ export default function NavBar() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav links-nav links-nav-responsive mb-2 mb-lg-0">
                             <li className="nav-item ">
-                                <a className="nav-link active text-link-color nav-item-responsive" aria-current="page" href="#">Servicios</a>
+                                <a className="nav-link active text-link-color nav-item-responsive" aria-current="page" href="#services">Servicios</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-link-color nav-item-responsive" href="#">Sobre Nosotros</a>
+                                <a className="nav-link text-link-color nav-item-responsive" href="#about">Sobre Nosotros</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-link-color nav-item-responsive" href="#">Testimonios</a>
+                                <a className="nav-link text-link-color nav-item-responsive" href="#testimonios">Testimonios</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-link-color nav-item-responsive" href="#">Trabaja con Nosotros</a>
+                                <a className="nav-link text-link-color nav-item-responsive" href="#work">Trabaja con Nosotros</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-link-color nav-item-responsive" href="#">Contacto</a>
+                                <a className="nav-link text-link-color nav-item-responsive" href="#contact">Contacto</a>
                             </li>
                             <li className="nav-item dropdown dropdow-idioma">
                                 <a className="nav-link dropdown-toggle text-link-color nav-item-responsive" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

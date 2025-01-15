@@ -7,6 +7,7 @@ import Testimonials from './layouts/Testimonials.jsx'
 import Contact from './layouts/Contact.jsx'
 import Footer from './layouts/Footer.jsx'
 import Whatsapp from './components/Whatsapp.jsx'
+import Description from './components/Description.jsx'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Contact/>
       <Footer/>
       <Whatsapp/>
+      <Description/>
     </>
   )
 }
