@@ -20,7 +20,6 @@ function App() {
       <Contact/>
       <Footer/>
       <Whatsapp/>
-      {/* <Carousel/> */}
     </>
   )
 }

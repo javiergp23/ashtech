@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+
 import './cardTestimonios.css'
 
 const testimonials = [
@@ -26,28 +26,12 @@ const testimonials = [
   ];
 
 export default function CardTestimonios(){
-    const carouselRef = useRef(null);
-
-    const handleScroll = (direction) => {
-      const container = carouselRef.current;
-      const scrollAmount = container.offsetWidth; // Desplazar una pantalla completa
-      if (direction === "left") {
-        container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-      } else {
-        container.scrollBy({ left: scrollAmount, behavior: "smooth" });
-      }
-    };
 
     return(
         <>
             <div className="carousel-container">
-                <button
-                    className="carousel-button left"
-                    onClick={() => handleScroll("left")}
-                >
-                    &#8592; {/* Flecha izquierda */}
-                </button>
-                <div className="carousel" ref={carouselRef}>
+                
+                <div className="carousel">
                     {testimonials.map((testimonial) => (
                     <div className="carousel-item" key={testimonial.id}>
                         <img
@@ -60,12 +44,7 @@ export default function CardTestimonios(){
                     </div>
                     ))}
                 </div>
-                <button
-                    className="carousel-button right"
-                    onClick={() => handleScroll("right")}
-                >
-                    &#8594; {/* Flecha derecha */}
-                </button>
+              
             </div>
         </>
     )

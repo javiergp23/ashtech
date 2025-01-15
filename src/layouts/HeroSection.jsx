@@ -20,7 +20,7 @@ export default function HeroSection() {
                 <h2 className="tiitle-two">Nuestro compromiso</h2>
                 <p className="subtiitle-two">Es con vos</p> 
             </div>
-            <div className='carousel'>
+            <div className='ofert-container'>
                 <div className='frame-container-img'>
                     <img className='frame-1' src="/src/assets/Frame-1.png" alt="frame-1" />
                 </div>
