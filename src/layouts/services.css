@@ -53,7 +53,24 @@ p{
 
 /* Teléfonos grandes (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
-  /* Estilos para teléfonos grandes o phablets */
+  .services-container{
+      margin-top: 4%;
+      margin-bottom: 0%; 
+  }
+  .services-cards{
+    height: 480px;
+  }
+  h1{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+  p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
 
 }
 

@@ -13,7 +13,6 @@
     text-align: left;
     color: #012E8B;
     margin-top: 4%;
-
 }
 
 .subtitle-form{
@@ -82,7 +81,6 @@ input::placeholder{
     line-height: 17.58px;
 }
 
-
 @media (min-width: 321px) and (max-width: 480px) {
 
     .container-form-component{
@@ -138,7 +136,54 @@ input::placeholder{
 /* Teléfonos grandes (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
   /* Estilos para teléfonos grandes o phablets */
+    .container-form-component{
+        display: block;
+        margin-top: 15%;
+        margin-bottom: 12%;
+    }
+    .title-form{
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: -0.0222em;
+        margin-top: 4%;
+        margin-left: 22%;
+    }
+    .subtitle-form{
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 3%;
+        margin-left: 22%
+    }
+    .form{
+        width: 100%;
+    }
+    .item-form-container{
+        padding: 10px;
+        width: 100%;
+    }
+    input{
+        width: 330px;
+        margin-left: 21%;
+    }
+    label{
+        margin-left: 21%;
+        margin-bottom: 4%;
+        color: #012E8B;
+    }
 
+    .boton-container{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 14%;
+    }
+    .button-form{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        padding: 10px 35px 10px 35px;
+
+    }
 }
 
 /* Tablets en orientación vertical (768px - 1024px) */

@@ -250,10 +250,125 @@
 /* Teléfonos grandes (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
   /* Estilos para teléfonos grandes o phablets */
+    .hero-section{
+        height: 620px;
+        margin-bottom: 26%;
+    }
+
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .nav-bar_link{
+        font-family: Roboto;
+        text-decoration: none;
+        color: #ffffff;
+        margin-left: 1.8rem;
+        font-size: 20px;
+    }
+
+    .img-logo{
+        margin-left: 25%;
+        width: 200px;
+    }
+
+    .select-lang{
+        margin-left: 5%;
+        background-color: transparent;
+        color: #ffffff;
+        border-radius: 6px;
+        font-size: 20px;
+        padding: 3px;
+        border-color: #ffffff;
+    }
+
+    .hero-section-content{
+        display: flex;
+        margin: auto;
+    }
+
+    .hero-section_title{
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+    .hero-section_subtitle{
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+    .button-hero-section{
+        font-size: 18px;
+        line-height: 16px;
+        padding: 14px;
+        text-decoration: none;
+    }
+
+    .hero-section_img{
+        margin-left: 10%;
+    }
+
+    .hero-section_img-1{
+        display: none;
+    }
+    .hero-section_img-responsive{
+        display: block;
+        margin: 0 0 0px 25px;
+
+    }   
+
+    .hero-content-two{
+        margin-top: 20%;
+        margin-left: 12%;
+    }
+    .tiitle-two{
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .subtiitle-two{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 0%;
+    }
+
+    .carousel{
+        margin-bottom: 5%;
+    }
+
     .frame-1{
-        width: 100px;
-        height: 136px;
-    
+        width: 80px;
+        height: 100px;
+    }
+
+    .text-frame{
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: left;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .frame-container-img{
+        width: 250px;
+        padding: 10px;
+        margin-left: 8%;
+    }
+    .elements-hero-section{
+        margin-left: 10%;
+    }
+    .ofert-container{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin: auto;
     }
 }
 

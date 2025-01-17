@@ -76,8 +76,7 @@
   }
   
   /* Teléfonos grandes (481px - 767px) */
-  @media (min-width: 481px) and (max-width: 767px) {
-    /* Estilos para teléfonos grandes o phablets */
+@media (min-width: 481px) and (max-width: 767px) {
     .logo-nav{
         margin-right: 10%;
         width: 70px;
@@ -85,6 +84,7 @@
 
     .menu-burger{
         color: #fff !important;
+        width: 60px;
     }
 
     .navbar-toggler-icon{
@@ -93,12 +93,38 @@
     .dropdow-idioma{
         border-radius: 15px;
         border: 1px solid #fff;
-        width: 12%;
+        width: 20%;
         margin: 0;
         padding: 2px;
     }
+    .text-link-color{
+        font-size: 20px;
+    }
+    .navbar{
+        position: relative;
+        z-index: 1050; 
+      }
+      
+    .navbar-collapse{
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        right: 0;
+        z-index: 1040; 
+        background-color: #ffffffe1;
+    }
+    .nav-item-responsive{
+        color: #0F298B !important;
+        font-weight: 700;
+    }
+    .navbar-toggler {
+        background-color: #ffffff; 
+        border-radius: 20px;
+        padding: 5px;
+        width: 50px;
+        margin-right: 4%;
+    }
   }
-
   
   /* Tablets en orientación vertical (768px - 1024px) */
   @media (min-width: 768px) and (max-width: 1024px) {

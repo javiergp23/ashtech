@@ -114,6 +114,7 @@
     width: 400px;
     height: 300px;
     padding: 40px 0 0 0;
+  }
     
   .carousel-img-test{
     width: 55px;
@@ -143,7 +144,67 @@
 
 /* Teléfonos grandes (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
-  /* Estilos para teléfonos grandes o phablets */
+  .carousel-container-test {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .container-carousel-test__responsive{
+    min-width: 380px;
+    height: 190px;
+    margin: 0 60px;
+    background-color: #ffffff1a;
+    border: solid 2px #ffffff;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+  }
+
+  .carousel-test {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
+  
+  }
+  .carousel-test::-webkit-scrollbar {
+    display: none; 
+  }
+  .carousel-item-test {
+    width: 400px;
+    height: 300px;
+    padding: 40px 0 0 0;
+  }
+    
+  .carousel-img-test{
+    width: 75px;
+    height: 75px;
+    border: #ffffff solid 2px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    top: -35px;
+  }
+  .testimonial-description{
+    width: 311px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 20px 0 20px 0;
+    font-family: Roboto flex;
+  }
+  .testimonial-name{
+    color: rgba(255, 146, 64, 1);
+    font-weight: 700;
+    font-family: Roboto;
+    line-height: 2px;
+  }
 }
 
 /* Tablets en orientación vertical (768px - 1024px) */

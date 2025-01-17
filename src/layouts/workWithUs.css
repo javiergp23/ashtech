@@ -43,7 +43,6 @@
     text-align: left;
     margin-bottom: 10%;
     text-align: left;
-
 }
 
 .button-work-with-us{
@@ -178,33 +177,135 @@
         height: 45px;
         margin-bottom: 40px;
     }
-    
-    
 }
 
 /* Teléfonos grandes (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
-  /* Estilos para teléfonos grandes o phablets */
-  .work-section{
+    .work-title{
+        display: none;
+    }
+    .work-section-text_responsive-none{
+        display: none;
+    }
+    .work-section{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 5%;
-        width: 100%;
+        margin-top: 0%;
     }
     .work-section-text{
         font-family: Roboto Flex;
-        font-size: 14px;
+        font-size: 30px;
         font-weight: 500;
         line-height: 35.16px;
         text-align: left;
         margin-bottom: 10%;
     }
-    .work-section_img{
-        width: 300px;
+    .work-img{
+        margin-left: 0%;
+        margin-right: 5%;
     }
-
+    .work-section_img{
+        display: none;
+    }
+    .work-section_img-responsive{
+        width: 215px;
+        padding: 4px;
+        margin-left: 0%;
+    }
+    .work-section-responsive{
+        display: block;
+        margin-left: 5%;
+        margin-top: 12%;
+    }
+    .work-section-text_responsive-title{
+        font-size: 28px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 35px;
+    }
+    .work-section-text_responsive-subtitle{
+        width: 420px;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        line-height: 20px;
+    }
+    .work-section-text-container{
+        width: 700px;
+        margin-left: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    .work-section-text{
+        width: 260px;
+        font-size: 18px;
+        line-height: 18px;
+        margin-left: 10%;
+    }
+    .sumate{
+        width: 190px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: left;
+        margin-bottom: 10%;
+        text-align: left;
+        margin-left: 10%;
+    }
+    .button-work-with-us{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 15.3px;
+        padding: 18px;
+        margin-bottom: 20%;
+        margin-right: 32%;
+        margin-left: 10%;
+    }
+    .modal-title-cv{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .modal-text{
+        color: rgba(67, 66, 66, 1);
+        margin-right: 25%;
+        font-size: 14px;
+    }
+    .container-modal-img{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 12%;
+      
+    }
+    .button-work-with-us_modal{
+        font-family: Roboto Flex;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #E05330;
+        color: #ffffff;
+        border-radius: 12px;
+        padding: 15px 35px 15px 35px;
+        border: none;
+        margin-bottom: 8%;
+    }
+    .container-button-modal{
+        display: flex;
+        justify-content: center;
+    }
+    .modal-text-adj{
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(30, 57, 141, 1);
+    }
+    .modal-img{
+        width: 45px;
+        height: 45px;
+        margin-bottom: 40px;
+    }
 }
 
 /* Tablets en orientación vertical (768px - 1024px) */

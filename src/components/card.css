@@ -178,8 +178,74 @@
 
 /* Teléfonos grandes (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
-  /* Estilos para teléfonos grandes o phablets */
+    .card{
+        width: 180px;
+        height: 270px;
+        margin: auto;
+        padding: 55px 22px 55px 22px;
+    }
+    .card_img{
+        width: 90px;
+        height: 90px;
+        margin-bottom: 15px;
+    }
+    .card_title{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    .modal-container-img{
+        display: none;
+    }
+    .title-modal{
+        display: none;
+    }
+    .card_paragraph{
+     display: none;    
+    }
+    .img-modal{
+        width: 75px;
+        height: 70px;
+    }
+    .details-responsive{
+        display: flex;
+        margin: auto;
 
+    }
+    .title-model_reponsive{
+        display: flex;
+        align-items: center;
+        width: 220px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .modal-container-style{
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+        margin: auto;
+    }
+    .paragraph-modal{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: left;
+        margin-top: 12px;
+        margin-bottom: 10px;
+        color: black;
+    }
+    .containet-button-modal{
+        display: flex;
+        justify-content: center;
+    }
+    .button-modal{
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 12px;
+        padding: 10px 38px 10px 38px;
+        margin-bottom: 30px;
+        margin-right: 6%;
+    }
 }
 
 /* Tablets en orientación vertical (768px - 1024px) */
