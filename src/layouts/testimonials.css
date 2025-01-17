@@ -49,6 +49,7 @@
         height: 60%;
         position: relative;
         height: 420px;
+        z-index: 2;
     }
     .test-title{
         font-size: 12px; 
@@ -75,7 +76,11 @@
         position: absolute;
         top: 0.2px;
     }
-   
+    .carousel-testimonial-container{
+        overflow: visible;
+        z-index: 1;
+    }
+}
 
 /* Teléfonos grandes (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {

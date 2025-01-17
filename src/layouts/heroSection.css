@@ -103,11 +103,9 @@
 }
 
 .ofert-container{
-    width: 70%;
-    margin: auto;
+    width: 90%;
     display: flex;
     align-items: center;
-    margin-bottom: 0;
 }
 
 .frame-1{
@@ -243,10 +241,9 @@
     }
     .ofert-container{
         width: 90%;
-        margin: auto;
         display: flex;
         align-items: center;
-        margin-bottom: 5%;
+        margin: auto;
     }
 }
 
