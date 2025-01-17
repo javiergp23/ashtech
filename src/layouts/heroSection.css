@@ -124,6 +124,7 @@
     display: none;
 }
 
+/* Teléfonos */
 @media (min-width: 321px) and (max-width: 480px) {
     .hero-section{
         height: 620px;
@@ -247,9 +248,7 @@
     }
 }
 
-/* Teléfonos grandes (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
-  /* Estilos para teléfonos grandes o phablets */
     .hero-section{
         height: 620px;
         margin-bottom: 26%;
@@ -372,15 +371,128 @@
     }
 }
 
-/* Tablets en orientación vertical (768px - 1024px) */
+/* Tablets  */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* Estilos para tablets en orientación vertical */
-}
+    .hero-section{
+        height: 620px;
+        margin-bottom: 26%;
+    }
 
-/* Tablets en orientación horizontal (1025px - 1280px) */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* Estilos para tablets en orientación horizontal o laptops pequeñas */
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
 
+    .nav-bar_link{
+        font-family: Roboto;
+        text-decoration: none;
+        color: #ffffff;
+        margin-left: 1.8rem;
+        font-size: 20px;
+    }
+
+    .img-logo{
+        margin-left: 25%;
+        width: 200px;
+    }
+
+    .select-lang{
+        margin-left: 5%;
+        background-color: transparent;
+        color: #ffffff;
+        border-radius: 6px;
+        font-size: 20px;
+        padding: 3px;
+        border-color: #ffffff;
+    }
+
+    .hero-section-content{
+        display: flex;
+        margin: auto;
+    }
+
+    .hero-section_title{
+        font-size: 38px;
+        line-height: 53px;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .hero-section_subtitle{
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 5%;
+        margin-bottom: 12%;
+    }
+
+    .button-hero-section{
+        font-size: 20px;
+        line-height: 16px;
+        padding: 14px;
+        text-decoration: none;
+    }
+
+    .hero-section_img{
+        margin-left: 5%;
+    }
+
+    .hero-section_img-1{
+        display: block;
+        width: 290px;
+        height: 320px;
+    }
+    .hero-section_img-responsive{
+        display: none;
+    }   
+
+    .hero-content-two{
+        margin-top: 10%;
+        margin-left: 12%;
+    }
+    .tiitle-two{
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .subtiitle-two{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 0%;
+    }
+
+    .carousel{
+        margin-bottom: 5%;
+    }
+
+    .frame-1{
+        width: 80px;
+        height: 100px;
+    }
+
+    .text-frame{
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: left;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .frame-container-img{
+        width: 250px;
+        padding: 10px;
+        margin-left: 8%;
+    }
+    .elements-hero-section{
+        margin-left: 10%;
+    }
+    .ofert-container{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
 }
 
 /* Pantallas de escritorio pequeñas (1281px - 1440px) */

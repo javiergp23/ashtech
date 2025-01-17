@@ -42,6 +42,17 @@
     overflow: visible;
 }
 
+.img-background_4{
+    display: none;
+}
+.img-background_3{
+    display: none;
+}
+.img-background_5{
+    display: none;
+}
+
+/* Teléfonos  */
 @media (min-width: 321px) and (max-width: 480px) {
     .testimonios-container{
         background: linear-gradient(66.22deg, rgba(42, 46, 37, 0.8) 2.7%, rgba(8, 32, 126, 0.8) 100%);
@@ -75,13 +86,22 @@
         position: absolute;
         top: 0.2px;
     }
+    .img-background_4{
+        display: none;
+    }
+    .img-background_5{
+        display: none;
+    }
+    .img-background_3{
+        display: none;
+    }
     .carousel-testimonial-container{
         overflow: visible;
         z-index: 1;
     }
 }
 
-/* Teléfonos grandes (481px - 767px) */
+
 @media (min-width: 481px) and (max-width: 767px) {
     .testimonios-container{
         background: linear-gradient(66.22deg, rgba(42, 46, 37, 0.8) 2.7%, rgba(8, 32, 126, 0.8) 100%);
@@ -111,6 +131,15 @@
         top: 254px;
         z-index: -1;
     }
+    .img-background_4{
+        display: none;
+    }
+    .img-background_5{
+        display: none;
+    }
+    .img-background_3{
+        display: none;
+    }
     .img-background_2{
         position: absolute;
         top: 0.2px;
@@ -121,15 +150,73 @@
     }
 }
 
-/* Tablets en orientación vertical (768px - 1024px) */
+/* Tablets  */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* Estilos para tablets en orientación vertical */
-}
-
-/* Tablets en orientación horizontal (1025px - 1280px) */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* Estilos para tablets en orientación horizontal o laptops pequeñas */
-
+    .testimonios-container{
+        background: linear-gradient(66.22deg, rgba(42, 46, 37, 0.8) 2.7%, rgba(8, 32, 126, 0.8) 100%);
+        position: relative;
+        height: 500px;
+        z-index: 2;
+        margin-top: 10%;
+    }
+    .test-title{
+        font-size: 18px; 
+        padding-top: 6%; 
+        margin-bottom: 0;
+    }
+    .test-title-two{
+        font-size: 26px;
+        margin-bottom: 1%;
+        line-height: 60px;
+    }
+    .test-title-three{
+        display: block;
+        font-family: Space Grotesk;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 15px;
+        text-align: center;
+        margin-bottom: 0%;
+    }
+    .img-background{
+        display: block;
+    }
+    .img-background_1{
+        position: absolute;
+        top: 332px;
+        z-index: -1;
+    }
+    .img-background_2{
+        position: absolute;
+        top: 0.2px;
+    }
+    .img-background_4{
+        position: absolute;
+        top: 416px;
+        left: 52%;
+        z-index: -1;
+        width: 85px;
+        height: 85px;
+    }
+    .img-background_3{
+        position: absolute;
+        top: 170px;
+        left: 66%;
+        width: 70px;
+        height: 70px;
+        z-index: -1;
+    }
+    .img-background_5{
+        position: absolute;
+        top:0px;
+        left: 78%;
+        width:80px;
+        height: 60px;
+    }
+    .carousel-testimonial-container{
+        overflow: visible;
+        z-index: 1;
+    }
 }
 
 /* Pantallas de escritorio pequeñas (1281px - 1440px) */

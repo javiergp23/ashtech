@@ -50,6 +50,7 @@
   background: rgba(0, 0, 0, 0.7);
 }
 
+/* Teléfonos  */
 @media (min-width: 321px) and (max-width: 480px) {
   .carousel-container-serv {
       position: relative;
@@ -73,7 +74,6 @@
     }
 }
 
-/* Teléfonos grandes (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
   .carousel-container-serv {
     position: relative;
@@ -127,12 +127,62 @@
   .carousel-button-serv:hover {
     background: rgba(0, 0, 0, 0.7);
   }
-
 }
 
-/* Tablets en orientación vertical (768px - 1024px) */
+/* Tablets  */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* Estilos para tablets en orientación vertical */
+  .carousel-container-serv {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .carousel-serv {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
+  }
+  .carousel-serv::-webkit-scrollbar {
+    display: none; 
+  }
+  .carousel-item-serv {
+    height: 500px;
+    width: 390px;
+    margin: 0 10px;
+    background: #012E8B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 8px;
+  }
+  .carousel-button-serv {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-button-serv.left {
+    left: 10px;
+  }
+  .carousel-button-serv.right {
+    right: 10px;
+  }
+  .carousel-button-serv:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
 }
 
 /* Pantallas de escritorio pequeñas (1281px - 1440px) */
@@ -141,12 +191,3 @@
  
 }
 
-/* Pantallas de escritorio grandes (1441px - 1920px) */
-@media (min-width: 1441px) and (max-width: 1920px) {
-  /* Estilos para pantallas de escritorio grandes */
-}
-
-/* Pantallas 4K y superiores (más de 1920px) */
-@media (min-width: 1921px) {
-  /* Estilos para pantallas muy grandes (4K) */
-}

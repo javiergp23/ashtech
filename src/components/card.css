@@ -248,15 +248,83 @@
     }
 }
 
-/* Tablets en orientación vertical (768px - 1024px) */
+/* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* Estilos para tablets en orientación vertical */
-}
+    .card{
+        width: 390px;
+        height: 500px;
+        margin: auto;
+        padding: 55px 22px 55px 22px;
+    }
+    .card_img{
+        width: 110px;
+        height: 110px;
+        margin-bottom: 15px;
+    }
+    .card_title{
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .modal-container-img{
+        display: none;
+    }
+    .title-modal{
+        display: none;
+    }
+    .card_paragraph{
+        display: block; 
+        margin-top: 40px; 
+        width: 300px; 
+        text-align: center;
+        font-family: Roboto;
+        font-weight: 400;
 
-/* Tablets en orientación horizontal (1025px - 1280px) */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* Estilos para tablets en orientación horizontal o laptops pequeñas */
-
+    }
+    .img-modal{
+        width: 75px;
+        height: 70px;
+    }
+    .details-responsive{
+        display: flex;
+        margin: auto;
+    }
+    .title-model_reponsive{
+        display: flex;
+        align-items: center;
+        width: 220px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .modal-container-style{
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+        margin: auto;
+    }
+    .paragraph-modal{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: left;
+        margin-top: 12px;
+        margin-bottom: 10px;
+        color: black;
+    }
+    .containet-button-modal{
+        display: flex;
+        justify-content: center;
+    }
+    .button-modal{
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 12px;
+        padding: 10px 38px 10px 38px;
+        margin-bottom: 30px;
+        margin-right: 6%;
+    }
 }
 
 /* Pantallas de escritorio pequeñas (1281px - 1440px) */

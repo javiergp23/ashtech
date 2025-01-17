@@ -25,6 +25,7 @@
 }
 
 
+/* Teléfonos  */
 @media (min-width: 321px) and (max-width: 480px) {
     .logo-nav{
         margin-right: 10%;
@@ -73,9 +74,8 @@
         width: 50px;
         margin-right: 4%;
     }
-  }
+}
   
-  /* Teléfonos grandes (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
     .logo-nav{
         margin-right: 10%;
@@ -124,77 +124,87 @@
         width: 50px;
         margin-right: 4%;
     }
-  }
-  
-  /* Tablets en orientación vertical (768px - 1024px) */
-  @media (min-width: 768px) and (max-width: 1024px) {
-    /* Estilos para tablets en orientación vertical */
+} 
+  /* Tablets  */
+@media (min-width: 768px) and (max-width: 1024px) {
     .logo-nav{
-        margin-right: 22%;
+        margin-right: 10%;
         width: 70px;
+    }
+    .img-logo{
+        width: 230px;
+        margin-left: 60%;
     }
 
     .menu-burger{
         color: #fff !important;
+        width: 60px;
     }
 
     .navbar-toggler-icon{
         color: #fff !important;
     }
-
     .dropdow-idioma{
         border-radius: 15px;
         border: 1px solid #fff;
-        width: 14%;
+        width: 20%;
         margin: 0;
         padding: 2px;
-        margin-left: 5%;
     }
+    .text-link-color{
+        font-size: 20px;
+    }
+    .navbar{
+        position: relative;
+        z-index: 1050; 
+    }
+      
+    .navbar-collapse{
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        right: 0;
+        z-index: 1040; 
+        background-color: #ffffffe1;
+    }
+    .nav-item-responsive{
+        color: #0F298B !important;
+        font-weight: 700;
+    }
+    .navbar-toggler {
+        background-color: #ffffff; 
+        border-radius: 20px;
+        padding: 5px;
+        width: 50px;
+        margin-right: 4%;
+    }
+}
 
-  }
-  
-  /* Tablets en orientación horizontal (1025px - 1280px) */
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    /* Estilos para tablets en orientación horizontal o laptops pequeñas */
-    .dropdow-idioma{
-        border-radius: 15px;
-        border: 1px solid #fff;
-        margin-left: 5%;
-        
-    }
-    .logo-nav{
-        margin-right: 2%;
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .bg-transparent{
+        background-color: transparent !important;
     }
     
-    .links-nav{
-        width: 100%;
+    .text-link-color{
+        color: #fff !important;
     }
-  }
-  
-  /* Pantallas de escritorio pequeñas (1281px - 1440px) */
-  @media (min-width: 1281px) and (max-width: 1440px) {
-    /* Estilos para pantallas de escritorio pequeñas */
+    
     .dropdow-idioma{
         border-radius: 15px;
         border: 1px solid #fff;
         margin-left: 20%;
-        
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23.44px;
     }
+    
     .logo-nav{
-        margin-right: 10%;
+        margin-right: 15%;
     }
     
     .links-nav{
         width: 100%;
     }
-  }
-  
-  /* Pantallas de escritorio grandes (1441px - 1920px) */
-  @media (min-width: 1441px) and (max-width: 1920px) {
-    /* Estilos para pantallas de escritorio grandes */
-  }
-  
-  /* Pantallas 4K y superiores (más de 1920px) */
-  @media (min-width: 1921px) {
-    /* Estilos para pantallas muy grandes (4K) */
-  }
+}
+
