@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    width: 600px;
+    height: 70%;
   }
   
   .content {
@@ -20,53 +20,70 @@
   .rotating-image {
     width: 100%;
     height: 100%;
-    animation: rotateImage 1s infinite;
     transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .image-container.animate .rotating-image {
+    animation: swing 1s ease-in-out; 
+  }
+
+  @keyframes swing {
+    0% {
+      transform: rotate(0deg); 
+    }
+    /* Gira hacia un lado */
+    50% {
+      transform: rotate(190deg); 
+    }
+    100% {
+      transform: rotate(0deg); 
+    }
   }
   
   .text-container {
-    width: 200px;
+    width: 230px;
     overflow: hidden;
-    height: 80px; /* Altura del texto visible */
+    height: 200px; /* Altura del texto visible */
     display: flex;
     align-items: center;
     position: relative;
+    margin-top: 30px;
   }
   
   .animated-text {
     position: absolute;
-    animation: slideText 5s infinite;
     font-size: 18px;
     font-weight: bold;
     color: black;
   }
-  
-  /* Animación de rotación */
-  @keyframes rotateImage {
-    0% {
-      transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(180deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
+
+  .animated-text-style{
+    font-size: 14px;
+    font-family: Roboto Flex;
+    line-height: 17px;
+    text-align: left;
+  }
+  /* Cambia el texto al mismo tiempo que gira la imagen */
+  .text-animate {
+    animation: slideText 1s ease-in-out; 
   }
   
-  /* Animación de cambio de texto */
+  /* Animación de rotación */
   @keyframes slideText {
     0% {
       transform: translateY(0);
       opacity: 1;
     }
+    /* Se mueve hacia arriba */
     50% {
-      opacity: 0;
+      transform: translateY(50px);
+      opacity: 0.5;
     }
+    /* Regresa a la posición inicial */
     100% {
-      transform: translateY(30px);
+      transform: translateY(150px); 
       opacity: 0;
     }
-    
   }
   

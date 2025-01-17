@@ -12,7 +12,7 @@ export default function Card({id, title, img, paragraph, imgModal, titleModal, p
                    {paragraph}
                 </p>
             </div>
-            <div className="modal fade" id={id} data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div className="modal fade" id={id} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div className="modal-dialog modal-lg modal-container">
                 <div className="modal-content">
                 <div className="modal-header">
