@@ -38,7 +38,7 @@ export default function Card({id, title, img, paragraph, imgModal, titleModal, p
                         </p>
                     </div>
                 </div>
-                <div className="containet-button-modal">
+                <div className="container-button-modal">
                     <button className="button-modal">
                         Consultar
                     </button>

@@ -270,11 +270,12 @@ background-color: transparent !important;
     }
     
     .container-item-footer{
-        margin-top: 12.5%;
+        margin-top: 16%;
+        margin-left: 5% !important;
     }
     
     .logo-div{
-        margin-right: 10%;
+        margin-right: 15%;
     }
     
     .logo-social{
@@ -289,7 +290,7 @@ background-color: transparent !important;
         flex-direction: column;
         align-items: start;
         margin-left: 10%;
-        gap: 10px;
+        gap: 8px;
     }
     
     .title-footer{
@@ -310,7 +311,7 @@ background-color: transparent !important;
     .nav-footer{
         display: flex;
         flex-direction: row;
-        margin: 20px 0 0 50px
+        margin: 20px 0 0 40px
     
     }
     .container-item-res-mobile{

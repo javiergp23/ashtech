@@ -180,7 +180,7 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     .bg-transparent{
         background-color: transparent !important;
     }
@@ -192,7 +192,7 @@
     .dropdow-idioma{
         border-radius: 15px;
         border: 1px solid #fff;
-        margin-left: 20%;
+        margin-left: 8%;
         font-family: Roboto;
         font-size: 20px;
         font-weight: 400;
@@ -200,11 +200,12 @@
     }
     
     .logo-nav{
-        margin-right: 15%;
+        margin-right: 10%;
     }
     
     .links-nav{
         width: 100%;
     }
+    
 }
 
