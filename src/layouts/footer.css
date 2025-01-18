@@ -259,7 +259,7 @@ background-color: transparent !important;
 }
 
 /* Pantallas de escritorio */
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
     .footer{
         background-image: url("/src//assets/rectagle-footer.png");
         background-repeat: no-repeat;
@@ -323,3 +323,136 @@ background-color: transparent !important;
     }
  
 }
+
+ /* Pantallas de escritorio pequeñas  */
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .footer{
+        background-image: url("/src//assets/rectagle-footer.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .container-item-footer{
+        margin-top: 14%;
+        margin-left: 5% !important;
+    }
+    
+    .logo-div{
+        margin-right: 20%;
+    }
+    
+    .logo-social{
+        background-color: rgba(128, 128, 128, 0.151);
+        border-radius: 50%;
+        padding: 4px;
+        margin-right: 50px;
+    }
+    
+    .container-item-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 10%;
+        gap: 8px;
+    }
+    
+    .title-footer{
+        font-family: Roboto;
+        font-size: 25px;
+        font-weight: 400;
+        color: white;
+    }
+    
+    .text-footer-links{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .nav-footer{
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0 0 40px
+    
+    }
+    .container-item-res-mobile{
+        display: none;
+    }
+    
+    .bg-link{
+        background-color: transparent !important;
+    }
+}
+ 
+  /* Pantallas de escritorio grandes  */
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .footer{
+        background-image: url("/src//assets/rectagle-footer.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .container-item-footer{
+        margin-top: 12%;
+        margin-left: 5% !important;
+    }
+    .logo-footer{
+        width: 340px;
+    }
+    .logo-div{
+        margin-right: 28%;
+    }
+    
+    .logo-social{
+        background-color: rgba(128, 128, 128, 0.151);
+        border-radius: 50%;
+        padding: 4px;
+        margin-right: 50px;
+    }
+    
+    .container-item-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 15%;
+        gap: 2px;
+    }
+    
+    .title-footer{
+        font-family: Roboto;
+        font-size: 25px;
+        font-weight: 400;
+        color: white;
+    }
+    
+    .text-footer-links{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .nav-footer{
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0 0 40px
+    
+    }
+    .container-item-res-mobile{
+        display: none;
+    }
+    
+    .bg-link{
+        background-color: transparent !important;
+    }
+   
+ } 

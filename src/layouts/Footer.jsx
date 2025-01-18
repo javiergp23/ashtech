@@ -13,14 +13,14 @@ export default function Footer(){
                         <a href="#"><img className="logo-social" src="/src/assets/youtube-logo-24.png" alt="" /></a>
                     </nav>
                 </div>
-                <div className="container-item-footer container-res-hidden">
+                <div className="container-item-footer container-item-footer_soporte container-res-hidden">
                     <p className="title-footer">Soporte</p>
                     <a className="text-footer-links" href="#services">Servicios</a>
                     <a className="text-footer-links" href="#about">Sobre nosotros</a>
                     <a className="text-footer-links" href="#testimonios">Testimonios</a>
                     <a className="text-footer-links" href="#work">Trabaja con nosotros</a>
                 </div>
-                <div className="container-item-footer container-res-hidden">
+                <div className="container-item-footer container-item-footer_contacto container-res-hidden">
                     <p className="title-footer">Contacto</p>
                     <p className="text-footer-links">011 34893455</p>
                     <p className="text-footer-links">ejemplo@gmail.com</p>
