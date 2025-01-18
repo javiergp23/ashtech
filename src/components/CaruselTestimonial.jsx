@@ -22,6 +22,13 @@ const testimonials = [
     description:
       "No puedo estar más feliz con los resultados. Volveré a usar este servicio.",
   },
+  {
+    id: 4,
+    image: "/src/assets/testimonio2.png",
+    name: "María González",
+    description:
+      "La mejor experiencia que he tenido en mucho tiempo. Excelente calidad.",
+  },
 ];
 
 export default function CarouselTestimonial() {
