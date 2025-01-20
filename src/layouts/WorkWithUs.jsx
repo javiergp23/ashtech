@@ -1,4 +1,3 @@
-
 import './workWithUs.css'
 
 export default function WorkWithUs(){
@@ -39,16 +38,16 @@ export default function WorkWithUs(){
                                 <form action="" className="form">
                                 <h1 className="modal-title fs-5 modal-title-cv" id="exampleModalLabel">Crea la carrera de tus sueños</h1>
                                     <div className="item-form-container">
-                                        <label htmlFor="">Nombre y apellido*</label>
-                                        <input type="text" placeholder="    Juan Perez" className="input"/>
+                                        <label className='label-modal_cv' htmlFor="">Nombre y apellido*</label>
+                                        <input type="text" placeholder="    Juan Perez" className="input input-modal_cv"/>
                                     </div>
                                     <div className="item-form-container">
-                                        <label htmlFor="">Correo Electrónico*</label>
-                                        <input type="text" placeholder="    ejemplo@gmail.com" className="input"/>
+                                        <label className='label-modal_cv' htmlFor="">Correo Electrónico*</label>
+                                        <input type="text" placeholder="    ejemplo@gmail.com" className="input input-modal_cv"/>
                                     </div>
                                     <div className="item-form-container">
-                                        <label htmlFor="">Teléfono*</label>
-                                        <input type="text" placeholder="    011 56749288" className="input"/>
+                                        <label  className='label-modal_cv'htmlFor="">Teléfono*</label>
+                                        <input type="text" placeholder="    011 56749288" className="input input-modal_cv"/>
                                     </div>
                                     <div>
                                         <div className='container-modal-text'>

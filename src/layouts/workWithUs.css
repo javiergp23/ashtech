@@ -137,6 +137,8 @@
         margin-bottom: 20%;
         margin-right: 32%;
     }
+
+    /* MODAL CV */
     .modal-title-cv{
         text-align: center;
         margin-bottom: 40px;
@@ -392,6 +394,8 @@
         margin-right: 32%;
         margin-left: 10%;
     }
+
+    /* MODAL CV */
     .modal-title-cv{
         text-align: center;
         margin-bottom: 40px;
@@ -432,6 +436,13 @@
         width: 45px;
         height: 45px;
         margin-bottom: 40px;
+    }
+    .input-modal_cv{
+        width: 400px;
+        margin-left: 8%;
+    }
+    .label-modal_cv{
+        margin-left: 8%;
     }
 }
 
@@ -510,6 +521,56 @@
     }
     .work-section_img-responsive{
         display: none;
+    }
+
+    /* MODAL CV */
+    .modal-title-cv{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .modal-text{
+        color: rgba(67, 66, 66, 1);
+        margin-right: 25%;
+        font-size: 14px;
+    }
+    .container-modal-img{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 12%;
+      
+    }
+    .button-work-with-us_modal{
+        font-family: Roboto Flex;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #E05330;
+        color: #ffffff;
+        border-radius: 12px;
+        padding: 15px 35px 15px 35px;
+        border: none;
+        margin-bottom: 8%;
+    }
+    .container-button-modal{
+        display: flex;
+        justify-content: center;
+    }
+    .modal-text-adj{
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(30, 57, 141, 1);
+    }
+    .modal-img{
+        width: 45px;
+        height: 45px;
+        margin-bottom: 40px;
+    }
+    .input-modal_cv{
+        width: 400px;
+        margin-left: 8%;
+    }
+    .label-modal_cv{
+        margin-left: 8%;
     }
 }
 
@@ -590,6 +651,55 @@
     .work-section_img-responsive{
         display: none;
     }
+    /* MODAL CV */
+    .modal-title-cv{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .modal-text{
+        color: rgba(67, 66, 66, 1);
+        margin-right: 25%;
+        font-size: 14px;
+    }
+    .container-modal-img{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 12%;
+      
+    }
+    .button-work-with-us_modal{
+        font-family: Roboto Flex;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #E05330;
+        color: #ffffff;
+        border-radius: 12px;
+        padding: 15px 35px 15px 35px;
+        border: none;
+        margin-bottom: 8%;
+    }
+    .container-button-modal{
+        display: flex;
+        justify-content: center;
+    }
+    .modal-text-adj{
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(30, 57, 141, 1);
+    }
+    .modal-img{
+        width: 45px;
+        height: 45px;
+        margin-bottom: 40px;
+    }
+    .input-modal_cv{
+        width: 400px;
+        margin-left: 8%;
+    }
+    .label-modal_cv{
+        margin-left: 8%;
+    }
 
 }
  
@@ -600,7 +710,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 5%;
+        margin-top: 10%;
     }
     
     .work-section-text-container{
@@ -653,7 +763,7 @@
         border-radius: 12px;
         padding: 18px;
         border: none;
-        margin-bottom: 20%;
+        margin-bottom: 5%;
     }
     
     .work-img{
@@ -671,5 +781,56 @@
         display: none;
     }
 
+    /* MODAL CV */
+    .modal-title-cv{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .modal-text{
+        color: rgba(67, 66, 66, 1);
+        margin-right: 52%;
+        font-size: 14px;
+    }
+    .container-modal-img{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 6%;
+      
+    }
+    .button-work-with-us_modal{
+        font-family: Roboto Flex;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #E05330;
+        color: #ffffff;
+        border-radius: 12px;
+        padding: 15px 35px 15px 35px;
+        border: none;
+        margin-bottom: 8%;
+    }
+    .container-button-modal{
+        display: flex;
+        justify-content: center;
+    }
+    .modal-text-adj{
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(30, 57, 141, 1);
+    }
+    .modal-img{
+        width: 45px;
+        height: 45px;
+        margin-bottom: 40px;
+    }
+    .input-modal_cv{
+        width: 400px;
+        margin-left: 8%;
+        margin-bottom: 4%;
+    }
+    .label-modal_cv{
+        margin-left: 8%;
+        margin-bottom: 4%;
+    }
 } 
 
