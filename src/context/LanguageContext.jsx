@@ -1,9 +1,7 @@
 import { createContext, useState, useContext } from "react";
 
-// Crea el contexto
 const LanguageContext = createContext();
 
-// Proveedor del contexto
 export const LanguageProvider = ({ children }) => {
     const [language, setLanguage] = useState("es"); // "es" para español como idioma predeterminado.
 
@@ -18,5 +16,4 @@ export const LanguageProvider = ({ children }) => {
     );
 };
 
-// Hook personalizado para usar el contexto
 export const useLanguage = () => useContext(LanguageContext);
