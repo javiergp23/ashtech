@@ -38,6 +38,13 @@ export default function NavBar() {
                             </li>
                             <li className="nav-item">
                             </li>
+                            <li className='img-navbar-collapse_pesponsive'>
+                                <div className='container-icon-collapse-navbar-collapse'>
+                                    <img className='icon-navbar-collapse' src="/src/assets/icon-navbar-collapse.png" alt="icon-navbar-collapse" />
+                                    <img className='icon-navbar-collapse_2' src="/src/assets/icon-navbar-collapse.png" alt="icon-navbar-collapse" />
+                                    <img className='icon-navbar-collapse_3' src="/src/assets/icon-navbar-collapse.png" alt="icon-navbar-collapse" />
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>

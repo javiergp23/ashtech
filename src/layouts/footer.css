@@ -401,14 +401,15 @@ background-color: transparent !important;
     }
     
     .container-item-footer{
-        margin-top: 12%;
+        margin-top: 13%;
         margin-left: 5% !important;
     }
     .logo-footer{
-        width: 340px;
+        width: 280px;
+        margin-left: 10%;
     }
     .logo-div{
-        margin-right: 28%;
+        margin-right: 21%;
     }
     
     .logo-social{
@@ -453,6 +454,10 @@ background-color: transparent !important;
     
     .bg-link{
         background-color: transparent !important;
+    }
+
+    .container-item-footer_soporte{
+        margin-right: 12%;
     }
    
  } 
