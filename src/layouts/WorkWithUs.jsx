@@ -16,7 +16,7 @@ export default function WorkWithUs(){
             email: "Correo Electrónico*",
             phone: "Teléfono*",
             buttonForm: "Enviar",
-            validation: "Campos obligatorios",
+            validation: "*Campos obligatorios",
             adj: "Adjuntar archivos",
             
         },

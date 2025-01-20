@@ -568,9 +568,11 @@
     .input-modal_cv{
         width: 400px;
         margin-left: 8%;
+        margin-bottom: 12px;
     }
     .label-modal_cv{
         margin-left: 8%;
+        margin-bottom: 20px;
     }
 }
 
