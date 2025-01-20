@@ -93,7 +93,8 @@ export default function WorkWithUs(){
                                         </div>
                                         <div className='container-modal-img'>
                                             <img className='modal-img' src="/src/assets/adjuntar-archivo.png" alt="" />
-                                            <p className='modal-text-adj'>{texts[language].adj}</p>
+                                            <label className='modal-text-adj custom-file-label' htmlFor="fileInput">{texts[language].adj}</label>
+                                            <input className='transparent-file-input' type="file" id="fileInput" accept=".pdf" />
                                         </div>
                                     </div>
                                     <div className='container-button-modal'>    

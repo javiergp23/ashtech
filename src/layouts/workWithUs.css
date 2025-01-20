@@ -180,6 +180,40 @@
         height: 45px;
         margin-bottom: 40px;
     }
+    /* adjntar */
+    .container-modal-img{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 12%;
+        margin-bottom: 8%;
+      
+    }
+    .transparent-file-input {
+        display: none;  
+      }
+    .custom-file-label{
+        background-color: transparent; 
+        color: #777;                   
+        border: 2px #777;        
+        padding: 10px 20px;             
+        cursor: pointer;               
+        font-size: 16px;                
+        text-align: left; 
+        margin: 0;
+    }
+    .custom-file-label:hover {
+        opacity: 0.8;                   
+    }
+    .input-modal_cv{
+        width: 280px;
+        margin-left: 12%;
+        margin-bottom: 4%;
+    }
+    .label-modal_cv{
+        margin-left: 12%;
+        margin-bottom: 4%;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -306,7 +340,41 @@
     .modal-img{
         width: 45px;
         height: 45px;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
+    }
+    /* adjntar */
+    .container-modal-img{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 12%;
+        margin-bottom: 8%;
+      
+    }
+    .transparent-file-input {
+        display: none;  
+      }
+    .custom-file-label{
+        background-color: transparent; 
+        color: #777;                   
+        border: 2px #777;        
+        padding: 10px 20px;             
+        cursor: pointer;               
+        font-size: 16px;                
+        text-align: left; 
+        margin: 0;
+    }
+    .custom-file-label:hover {
+        opacity: 0.8;                   
+    }
+    .input-modal_cv{
+        width: 350px;
+        margin-left: 12%;
+        margin-bottom: 4%;
+    }
+    .label-modal_cv{
+        margin-left: 12%;
+        margin-bottom: 4%;
     }
 }
 
@@ -405,13 +473,7 @@
         margin-right: 25%;
         font-size: 14px;
     }
-    .container-modal-img{
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        margin-left: 12%;
-      
-    }
+    
     .button-work-with-us_modal{
         font-family: Roboto Flex;
         font-size: 16px;
@@ -435,7 +497,7 @@
     .modal-img{
         width: 45px;
         height: 45px;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
     .input-modal_cv{
         width: 400px;
@@ -443,6 +505,31 @@
     }
     .label-modal_cv{
         margin-left: 8%;
+    }
+    /* adjntar */
+    .container-modal-img{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 8%;
+        margin-bottom: 8%;
+      
+    }
+    .transparent-file-input {
+        display: none;  
+      }
+    .custom-file-label{
+        background-color: transparent; 
+        color: #777;                   
+        border: 2px #777;        
+        padding: 10px 20px;             
+        cursor: pointer;               
+        font-size: 16px;                
+        text-align: left; 
+        margin: 0;
+    }
+    .custom-file-label:hover {
+        opacity: 0.8;                   
     }
 }
 
@@ -533,13 +620,7 @@
         margin-right: 25%;
         font-size: 14px;
     }
-    .container-modal-img{
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        margin-left: 12%;
-      
-    }
+    
     .button-work-with-us_modal{
         font-family: Roboto Flex;
         font-size: 16px;
@@ -563,7 +644,7 @@
     .modal-img{
         width: 45px;
         height: 45px;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
     .input-modal_cv{
         width: 400px;
@@ -574,9 +655,35 @@
         margin-left: 8%;
         margin-bottom: 20px;
     }
+
+    /* adjntar */
+    .container-modal-img{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 12%;
+        margin-bottom: 8%;
+      
+    }
+    .transparent-file-input {
+        display: none;  
+      }
+    .custom-file-label{
+        background-color: transparent; 
+        color: #777;                   
+        border: 2px #777;        
+        padding: 10px 20px;             
+        cursor: pointer;               
+        font-size: 16px;                
+        text-align: left; 
+        margin: 0;
+    }
+    .custom-file-label:hover {
+        opacity: 0.8;                   
+    }
 }
 
- /* Pantallas de escritorio pequeñas (1281px - 1440px) */
+ /* Pantallas de escritorio pequeñas  */
 @media (min-width: 1281px) and (max-width: 1440px) {
     .work-section{
         display: flex;
@@ -705,7 +812,7 @@
 
 }
  
-  /* Pantallas de escritorio grandes (1441px - 1920px) */
+  /* Pantallas de escritorio grandes */
 @media (min-width: 1441px) and (max-width: 1920px) {
     .work-section{
         display: flex;
