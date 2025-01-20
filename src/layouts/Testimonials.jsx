@@ -1,14 +1,31 @@
-import './testimonials.css'
+import { useLanguage } from '../context/LanguageContext'
 import CarouselTestimonial from '../components/CaruselTestimonial.jsx'
+import './testimonials.css'
 
 export default function Testimonials(){
+    const { language } = useLanguage();
+    const texts = {
+        es: {
+            title: "TESTIMONIOS",
+            subtitle: "Nuestros clientes",
+            textOne: "Te compartimos sus experiencias",
+            
+        },
+        en: {
+            title: "TESTIMONIALS",
+            subtitle: "Our clients",
+            textOne: "We share your experiences",
+            
+        },
+    };
+
     return(
         <> 
             <div className="testimonios-container" id="testimonios">
                 <div>
-                    <p className="test-title">TESTIMONIOS</p>
-                    <h1 className="test-title-two">Nuestros clientes</h1>
-                    <h2 className="test-title-three">Te compartimos sus experiencias</h2>
+                    <p className="test-title">{texts[language].title}</p>
+                    <h1 className="test-title-two">{texts[language].subtitle}</h1>
+                    <h2 className="test-title-three">{texts[language].textOne}</h2>
                 </div>
                 <div className='carousel-testimonial-container'>
                     <CarouselTestimonial/>

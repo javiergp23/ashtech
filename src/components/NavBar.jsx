@@ -1,6 +1,28 @@
 import './navbar.css'
+import { useLanguage } from '../context/LanguageContext'
 
 export default function NavBar() {
+    const { changeLanguage } = useLanguage();
+    const { language } = useLanguage();
+    const texts = {
+        es: {
+            service: "Servicios",
+            contact: "Contacto",
+            about: "Sobre nosotros",
+            testimonial: "Testimonios",
+            work: "Trabaja con nosotros",
+            language: "Idioma"
+        },
+        en: {
+            service: "Services",
+            contact: "Contact",
+            about: "About us",
+            testimonial: "Testimonials",
+            work: "Work with us",
+            language: "Language"
+        },
+    };
+
     return(
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary bg-transparent">
@@ -12,30 +34,30 @@ export default function NavBar() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav links-nav links-nav-responsive mb-2 mb-lg-0">
                             <li className="nav-item ">
-                                <a className="nav-link active text-link-color nav-item-responsive" aria-current="page" href="#services">Servicios</a>
+                                <a className="nav-link active text-link-color nav-item-responsive" aria-current="page" href="#services">{texts[language].service}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-link-color nav-item-responsive" href="#about">Sobre Nosotros</a>
+                                <a className="nav-link text-link-color nav-item-responsive" href="#about">{texts[language].about}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-link-color nav-item-responsive" href="#testimonios">Testimonios</a>
+                                <a className="nav-link text-link-color nav-item-responsive" href="#testimonios">{texts[language].testimonial}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-link-color nav-item-responsive" href="#work">Trabaja con Nosotros</a>
+                                <a className="nav-link text-link-color nav-item-responsive" href="#work">{texts[language].work}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-link-color nav-item-responsive" href="#contact">Contacto</a>
+                                <a className="nav-link text-link-color nav-item-responsive" href="#contact">{texts[language].contact}</a>
                             </li>
-                            <li className="nav-item dropdown dropdow-idioma">
+                            <div className="nav-item dropdown dropdow-idioma">
                                 <a className="nav-link dropdown-toggle text-link-color nav-item-responsive" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Idioma
+                                {texts[language].language}
                             </a>
-                            <ul className="dropdown-menu dropdow-idioma">
-                                <li><a className="dropdown-item text-idioma-color nav-item-responsive" href="#">Español</a></li>
-                                <li><hr className="dropdown-divider"/></li>
-                                <li><a className="dropdown-item text-idioma-color nav-item-responsive" href="#">Ingles</a></li>
-                            </ul>
-                            </li>
+                                <ul className="dropdown-menu dropdow-idioma ">
+                                    <li className='text-idioma-color_li'><a className="dropdown-item text-idioma-color nav-item-responsive" href="#" onClick={() => changeLanguage("es")}>Español</a></li>
+                                    <li className='text-idioma-color_li'><hr className="dropdown-divider"/></li>
+                                    <li className='text-idioma-color_li'><a className="dropdown-item text-idioma-color nav-item-responsive" href="#" onClick={() => changeLanguage("en")}>Ingles</a></li>
+                                </ul>
+                            </div>
                             <li className="nav-item">
                             </li>
                             <li className='img-navbar-collapse_pesponsive'>

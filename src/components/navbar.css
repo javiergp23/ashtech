@@ -267,6 +267,7 @@
     
     .text-link-color{
         color: #fff !important;
+        font-size: 15px;
     }
     
     .dropdow-idioma{
@@ -289,6 +290,12 @@
     .img-navbar-collapse_pesponsive{
         display: none;
     }
+    .text-idioma-color{
+        color: rgba(1, 46, 139, 1);
+        font-size: 15px;
+    }
+
+    
     
 }
 

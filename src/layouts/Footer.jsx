@@ -1,6 +1,29 @@
+import { useLanguage } from '../context/LanguageContext'
 import './footer.css'
 
 export default function Footer(){
+    const { language } = useLanguage();
+    const texts = {
+        es: {
+            support: "Soporte",
+            contact: "Contacto",
+            service: "Servicios",
+            about: "Sobre Nosotros",
+            testimonials: "Testimonios",
+            workwithUs: "Trabaja con nosotros",
+            redes: "Redes Sociales"
+        },  
+        en: {
+            support: "Support",
+            contact: "Contact",
+            service: "Services",
+            about: "About Us",
+            testimonials: "Testimonials",
+            workwithUs: "Work with Us",
+            redes: "Social Networks"
+        },
+    };
+
     return(
         <>
             <div className="footer">
@@ -14,11 +37,11 @@ export default function Footer(){
                     </nav>
                 </div>
                 <div className="container-item-footer container-item-footer_soporte container-res-hidden">
-                    <p className="title-footer">Soporte</p>
-                    <a className="text-footer-links" href="#services">Servicios</a>
-                    <a className="text-footer-links" href="#about">Sobre nosotros</a>
-                    <a className="text-footer-links" href="#testimonios">Testimonios</a>
-                    <a className="text-footer-links" href="#work">Trabaja con nosotros</a>
+                    <p className="title-footer">{texts[language].support}</p>
+                    <a className="text-footer-links" href="#services">{texts[language].service}</a>
+                    <a className="text-footer-links" href="#about">{texts[language].about}</a>
+                    <a className="text-footer-links" href="#testimonios">{texts[language].testimonials}</a>
+                    <a className="text-footer-links" href="#work">{texts[language].workwithUs}</a>
                 </div>
                 <div className="container-item-footer container-item-footer_contacto container-res-hidden">
                     <p className="title-footer">Contacto</p>
@@ -28,18 +51,18 @@ export default function Footer(){
                 <div className='container-item-res-mobile'>
                     <div className="dropdown">
                         <button className="btn btn-secondary dropdown-toggle bg-link custom-select" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Soporte
+                        {texts[language].support}
                         </button>
                         <ul className="dropdown-menu">
-                            <li><a className="link-nav-footer" href="#services">Servicios</a></li>
-                            <li><a className="link-nav-footer" href="#about">Sobre nosotros</a></li>
-                            <li><a className="link-nav-footer" href="#about">Testimonios</a></li>
-                            <li><a className="link-nav-footer" href="#work">Trabaja con nosotros</a></li>
+                            <li><a className="link-nav-footer" href="#services">{texts[language].service}</a></li>
+                            <li><a className="link-nav-footer" href="#about">{texts[language].about}</a></li>
+                            <li><a className="link-nav-footer" href="#about">{texts[language].testimonials}</a></li>
+                            <li><a className="link-nav-footer" href="#work">{texts[language].workwithUs}</a></li>
                         </ul>
                     </div>
                     <div className="dropdown">
                         <button className="btn btn-secondary dropdown-toggle bg-link custom-select" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Redes Sociales
+                        {texts[language].redes}
                         </button>
                         <ul className="dropdown-menu">
                             <li className='list-nav-footer'><a href="#" className='link-nav-footer'><img className="logo-social-footer" src="/src/assets/instagram-logo-24.png" alt="" />Instagram</a></li>
@@ -50,7 +73,7 @@ export default function Footer(){
                     </div>
                     <div className="dropdown">
                         <button className="btn btn-secondary dropdown-toggle bg-link custom-select" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Contacto
+                        {texts[language].contact}
                         </button>
                         <ul className="dropdown-menu">
                             <li><a className="dropdown-item" href="#">011 34893455</a></li>
