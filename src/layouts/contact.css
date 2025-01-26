@@ -111,10 +111,10 @@ input::placeholder{
     }
     input{
         width: 330px;
-        margin-left: 14%;
+        margin-left: 5%;
     }
     label{
-        margin-left: 14%;
+        margin-left: 5%;
         margin-bottom: 4%;
         color: #012E8B;
     }

@@ -187,7 +187,8 @@
     }
     
     .hero-section_img{
-        margin-left: 10%;
+        margin-left: 5%;
+        object-fit: cover;
     }
     
     .hero-section_img-1{
@@ -196,7 +197,8 @@
     .hero-section_img-responsive{
         display: block;
         margin: 0 0 0px 25px;
-
+        width: 80%;
+        margin-right: 100px;
     }   
     
     .hero-content-two{
@@ -241,7 +243,7 @@
         margin-left: 10%;
     }
     .ofert-container{
-        width: 90%;
+        width: 100%;
         display: flex;
         align-items: center;
         margin: auto;

@@ -170,6 +170,7 @@
     overflow-x: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none; 
+    
   
   }
   .carousel-test::-webkit-scrollbar {

@@ -1,7 +1,6 @@
+import { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext'
 import "./carouselTestimonial.css";
-
-
 
 export default function CarouselTestimonial() {
       const { language } = useLanguage();
@@ -51,13 +50,36 @@ export default function CarouselTestimonial() {
           texts[language].descriptionFour,
         },
       ];
+
+      const [currentSlide, setCurrentSlide] = useState(0);
+      const carouselRef = useRef(null);
+
+      useEffect(() => {
+        const interval = setInterval(() => {
+          const newIndex = (currentSlide + 1) % testimonials.length;
+          setCurrentSlide(newIndex);
+          scrollToSlide(newIndex);
+        }, 10000); // Cambiar slide cada 10 segundos
+    
+        return () => clearInterval(interval);
+      }, [currentSlide, testimonials.length]);
+
+      const scrollToSlide = (index) => {
+        const carousel = carouselRef.current;
+        const slide = carousel?.children[index]; // Selecciona el slide correspondiente
+        if (carousel && slide) {
+          const slideOffset = slide.offsetLeft; // Posición del slide
+          const carouselWidth = carousel.offsetWidth; // Ancho del contenedor del carousel
+          const slideWidth = slide.offsetWidth; // Ancho del slide
+          const offset = slideOffset - (carouselWidth - slideWidth) / 2; // Calcula el desplazamiento para centrar
+          carousel.scrollTo({ left: offset, behavior: 'smooth' });
+        }
+      };
   return (
     <>
       <div className="carousel-container-test">
-        
           <div className="carousel-test">
           {testimonials.map((testimonial) => (
-            
               <div className="carousel-item-test" key={testimonial.id}>
                 <div className="container-carousel-test__responsive">
                   <img

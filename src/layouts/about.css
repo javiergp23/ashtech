@@ -161,15 +161,16 @@
     }
     .responsive-section{
         display: block;
+        margin: auto
     }
     .about-section-text-responsive-two{
         display: block;
         font-size: 14px;
-        width:400px;
+        width:300px;
         line-height: 16px;
         text-align: left;
         font-weight: 600;
-        margin: 10px auto;
+        margin: auto;
     }
     .about-section-text-tablet{
         display: none;
@@ -231,7 +232,7 @@
     }
     .about-section-text-responsive{
         display: block;
-        width: 280px;
+        width: 200px;
         font-size: 16px;
         line-height: 16px;
         text-align: left;
@@ -255,6 +256,10 @@
     }
     .about-section-text-two-tablet{
         display: none;
+    }
+    .about-section-text-container{
+        width: 200px;
+        margin-left: 5%;
     }
 }
 
