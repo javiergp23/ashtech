@@ -335,3 +335,39 @@
     }
 }
 
+@media (min-width: 1921px) and (max-width: 2560px) {
+    .bg-transparent{
+        background-color: transparent !important;
+    }
+    
+    .text-link-color{
+        color: #fff !important;
+        font-size: 30px;
+    }
+    
+    .dropdow-idioma{
+        border-radius: 15px;
+        border: 1px solid #fff;
+        margin-left: 12% !important;
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 23.44px;
+    }
+    
+    .logo-nav{
+        margin-right: 12%;
+    }
+    
+    .links-nav{
+        width: 100%;
+    }
+    .nav-item{
+        margin-left: 14px;
+    }
+    
+    .img-navbar-collapse_pesponsive{
+        display: none;
+    }
+}
+
