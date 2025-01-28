@@ -35,7 +35,7 @@ export default function Description(){
         setCurrentTextIndex((prevIndex) => (prevIndex + 1) % textos.length);
         setIsAnimating(false); // Detener la animación después del cambio
       }, 1000); // Ajusta este tiempo al de tu animación de imagen
-    }, 10000); // Cada 8 segundos se cambia el texto
+    }, 6000); // Cada 8 segundos se cambia el texto
 
     return () => clearInterval(interval); 
   }, [textos.length]);
