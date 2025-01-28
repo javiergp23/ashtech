@@ -1,11 +1,14 @@
 import { useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext'
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import './contact.css'
+
+
 
 export default function Contact(){
     const { language } = useLanguage();
     const form = useRef();
+    
     const texts = {
         es: {
             titleContact: "Contáctate con nosotros",
@@ -28,21 +31,26 @@ export default function Contact(){
             placeholderMessage: "Write a message...",
         },
     };
-
+    
     const sendEmail = (e) => {
         e.preventDefault();
 
+        const  publickey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+        const  serviceid = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const  templateid = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+
         emailjs
             .sendForm(
-                'service_vb4y59v', // Reemplaza con tu Service ID
-                'template_3tp7det', // Reemplaza con tu Template ID
+                serviceid, // Reemplaza con tu Service ID
+                templateid, // Reemplaza con tu Template ID
                 form.current,
-                'M-nG62mrFKNARsnGl' // Reemplaza con tu Public Key de EmailJS
+                publickey // Reemplaza con tu Public Key de EmailJS
             )
             .then(
                 (result) => {
                     console.log('Email enviado:', result.text);
                     alert('¡Mensaje enviado con éxito!');
+                    form.current.reset();
                 },
                 (error) => {
                     console.error('Error al enviar el email:', error.text);
@@ -70,7 +78,7 @@ export default function Contact(){
                     </div>
                     <div className="item-form-container item-form-container_contact">
                         <label htmlFor="message">{texts[language].mensaje}</label>
-                         <input className="label-menssage input" name='message' type="textarea" placeholder={texts[language].placeholderMessage} required/>
+                         <textarea className="label-menssage input" name='message' type="textarea" placeholder={texts[language].placeholderMessage} required />
                     </div>
                     <div className="boton-container">
                         <button type='submit' className="button-form">{texts[language].buttonContact}</button>

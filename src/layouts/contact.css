@@ -53,6 +53,12 @@ input{
 
 .label-menssage{
     height: 150px;
+    width: 731.77px;
+    
+    gap: 0px;
+    border-radius: 8px;
+    border: 1px solid #E05330;
+    opacity: 0px;
 }
 
 .button-form{
@@ -132,6 +138,18 @@ input::placeholder{
         padding: 10px 35px 10px 35px;
 
     }
+    .label-menssage{
+        width: 80%;
+        height: 100px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        resize: vertical;
+        border-radius: 8px;
+        border: 1px solid #E05330;
+        opacity: 0px;
+        margin-left: 5%;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -181,6 +199,18 @@ input::placeholder{
         line-height: 24px;
         text-align: center;
         padding: 10px 35px 10px 35px;
+    }
+    .label-menssage{
+        width: 64%;
+        height: 100px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        resize: vertical;
+        border-radius: 8px;
+        border: 1px solid #E05330;
+        opacity: 0px;
+        margin-left: 21%;
     }
 }
 
@@ -232,7 +262,18 @@ input::placeholder{
         line-height: 24px;
         text-align: center;
         padding: 10px 35px 10px 35px;
-
+    }
+    .label-menssage{
+        width: 59%;
+        height: 100px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        resize: vertical;
+        border-radius: 8px;
+        border: 1px solid #E05330;
+        opacity: 0px;
+        margin-left: 21%;
     }
 }
 
@@ -287,6 +328,18 @@ input::placeholder{
         text-align: center;
         padding: 15px 35px 15px 35px;
     } 
+    .label-menssage{
+        width: 58%;
+        height: 100px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        resize: vertical;
+        border-radius: 8px;
+        border: 1px solid #E05330;
+        opacity: 0px;
+        margin-left: 20%;
+    }
 }
 
  /* Pantallas de escritorio pequeñas  */
@@ -340,6 +393,18 @@ input::placeholder{
         text-align: center;
         padding: 15px 35px 15px 35px;
     } 
+    .label-menssage{
+        width: 600px;
+        height: 100px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        resize: vertical;
+        border-radius: 8px;
+        border: 1px solid #E05330;
+        opacity: 0px;
+        margin-left: 28%;
+    }
 }
  
   /* Pantallas de escritorio grandes  */
@@ -394,6 +459,18 @@ input::placeholder{
         text-align: center;
         padding: 15px 35px 15px 35px;
     } 
+    .label-menssage{
+        width: 600px;
+        height: 100px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        resize: vertical;
+        border-radius: 8px;
+        border: 1px solid #E05330;
+        opacity: 0px;
+        margin-left: 34%;
+    }
   } 
 @media (min-width: 1921px) and (max-width: 2560px) {
     .container-form-component{
@@ -446,4 +523,16 @@ input::placeholder{
         text-align: center;
         padding: 15px 35px 15px 35px;
     } 
+    .label-menssage{
+        width: 600px;
+        height: 100px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        resize: vertical;
+        border-radius: 8px;
+        border: 1px solid #E05330;
+        opacity: 0px;
+        margin-left: 34%;
+    }
 }
