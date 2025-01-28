@@ -1,5 +1,5 @@
 .footer{
-    background-image: url("/src//assets/rectagle-footer.png");
+    background-image: url("/rectagle-footer.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -261,7 +261,7 @@ background-color: transparent !important;
 /* Pantallas de escritorio */
 @media (min-width: 1025px) and (max-width: 1280px) {
     .footer{
-        background-image: url("/src//assets/rectagle-footer.png");
+        background-image: url("/rectagle-footer.png");
         background-repeat: no-repeat;
         background-size: cover;
         height: 400px;
@@ -327,7 +327,7 @@ background-color: transparent !important;
  /* Pantallas de escritorio pequeñas  */
 @media (min-width: 1281px) and (max-width: 1440px) {
     .footer{
-        background-image: url("/src//assets/rectagle-footer.png");
+        background-image: url("/rectagle-footer.png");
         background-repeat: no-repeat;
         background-size: cover;
         height: 400px;
@@ -392,7 +392,7 @@ background-color: transparent !important;
   /* Pantallas de escritorio grandes  */
 @media (min-width: 1441px) and (max-width: 1920px) {
     .footer{
-        background-image: url("/src//assets/rectagle-footer.png");
+        background-image: url("/rectagle-footer.png");
         background-repeat: no-repeat;
         background-size: cover;
         height: 440px;
@@ -463,7 +463,7 @@ background-color: transparent !important;
  } 
  @media (min-width: 1921px) and (max-width: 2560px) {
     .footer{
-        background-image: url("/src//assets/rectagle-footer.png");
+        background-image: url("/rectagle-footer.png");
         background-repeat: no-repeat;
         background-size: cover;
         height: 540px;

@@ -28,12 +28,12 @@ export default function Footer(){
         <>
             <div className="footer">
                 <div className="container-item-footer logo-div">
-                    <img  className="logo-footer" src="/src/assets/logo1.png" alt="Logo-footer" />
+                    <img  className="logo-footer" src="/logo1.png" alt="Logo-footer" />
                     <nav className="nav-footer container-res-hidden">
-                        <a href="#"><img className="logo-social" src="/src/assets/instagram-logo-24.png" alt="" /></a>
-                        <a href="#"><img className="logo-social" src="/src/assets/linkedin-logo-24.png" alt="" /></a>
-                        <a href="#"><img className="logo-social" src="/src/assets/facebook-logo-24.png" alt="" /></a>
-                        <a href="#"><img className="logo-social" src="/src/assets/youtube-logo-24.png" alt="" /></a>
+                        <a href="#"><img className="logo-social" src="/instagram-logo-24.png" alt="" /></a>
+                        <a href="#"><img className="logo-social" src="/linkedin-logo-24.png" alt="" /></a>
+                        <a href="#"><img className="logo-social" src="/facebook-logo-24.png" alt="" /></a>
+                        <a href="#"><img className="logo-social" src="/youtube-logo-24.png" alt="" /></a>
                     </nav>
                 </div>
                 <div className="container-item-footer container-item-footer_soporte container-res-hidden">
@@ -65,10 +65,10 @@ export default function Footer(){
                         {texts[language].redes}
                         </button>
                         <ul className="dropdown-menu">
-                            <li className='list-nav-footer'><a href="#" className='link-nav-footer'><img className="logo-social-footer" src="/src/assets/instagram-logo-24.png" alt="" />Instagram</a></li>
-                            <li className='list-nav-footer'><a href="#" className='link-nav-footer'><img className="logo-social-footer" src="/src/assets/linkedin-logo-24.png" alt="" />Linkedin</a></li>
-                            <li className='list-nav-footer'><a href="#" className='link-nav-footer'><img className="logo-social-footer" src="/src/assets/facebook-logo-24.png" alt="" />Facebook</a></li>
-                            <li className='list-nav-footer'><a href="#" className='link-nav-footer'><img className="logo-social-footer" src="/src/assets/youtube-logo-24.png" alt="" />Youtube</a></li>
+                            <li className='list-nav-footer'><a href="#" className='link-nav-footer'><img className="logo-social-footer" src="/instagram-logo-24.png" alt="" />Instagram</a></li>
+                            <li className='list-nav-footer'><a href="#" className='link-nav-footer'><img className="logo-social-footer" src="/linkedin-logo-24.png" alt="" />Linkedin</a></li>
+                            <li className='list-nav-footer'><a href="#" className='link-nav-footer'><img className="logo-social-footer" src="/facebook-logo-24.png" alt="" />Facebook</a></li>
+                            <li className='list-nav-footer'><a href="#" className='link-nav-footer'><img className="logo-social-footer" src="/youtube-logo-24.png" alt="" />Youtube</a></li>
                         </ul>
                     </div>
                     <div className="dropdown">

@@ -49,7 +49,7 @@ export default function Description(){
                   className={`image-container ${isAnimating ? "animate" : ""}`}
                 >
                   <img
-                      src="/src/assets/Frame-1.png"
+                      src="/Frame-1.png"
                       alt="Rotating"
                       className="rotating-image"
                   />

@@ -11,5 +11,5 @@ createRoot(document.getElementById('root')).render(
     <LanguageProvider>  
       <App />
     </LanguageProvider>
-  </StrictMode>,
+  </StrictMode>
 )

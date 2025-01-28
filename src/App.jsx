@@ -18,7 +18,7 @@ function App() {
       <Testimonials/>
       <Contact/>
       <Footer/>
-      <Whatsapp/>s
+      <Whatsapp/>
     </>
   )
 }

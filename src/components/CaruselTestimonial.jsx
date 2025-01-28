@@ -24,27 +24,27 @@ export default function CarouselTestimonial() {
       const testimonials = [
         {
           id: 1,
-          image: "/src/assets/testimonio1.png",
+          image: "/testimonio1.png",
           name: "Juan Pérez",
           description: texts[language].descriptionOne,
         },
         {
           id: 2,
-          image: "/src/assets/testimonio2.png",
+          image: "/testimonio2.png",
           name: "María González",
           description:
           texts[language].descriptionTwo,
         },
         {
           id: 3,
-          image: "/src/assets/testimonio1.png",
+          image: "/testimonio1.png",
           name: "Carlos Martínez",
           description:
           texts[language].descriptionThree,
         },
         {
           id: 4,
-          image: "/src/assets/testimonio2.png",
+          image: "/testimonio2.png",
           name: "María González",
           description:
           texts[language].descriptionFour,

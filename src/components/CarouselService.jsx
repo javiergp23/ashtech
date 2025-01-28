@@ -44,9 +44,9 @@ export default function Carousel() {
             <Card
                id="1"
                title={texts[language].titleOne} 
-               img="/src/assets/gestion.png" 
+               img="/gestion.png" 
                paragraph={texts[language].aboutOne}   
-               imgModal="/src/assets/first.gif"
+               imgModal="/first.gif"
                titleModal={texts[language].titleOne}
                paragraphModal={texts[language].paragraphModalOne}
             />
@@ -55,9 +55,9 @@ export default function Carousel() {
             <Card 
               id="2"
               title={texts[language].titleTwo} 
-              img="/src/assets/candidato.png" 
+              img="/candidato.png" 
               paragraph={texts[language].aboutTwo} 
-              imgModal="/src/assets/second.gif"
+              imgModal="/second.gif"
               titleModal={texts[language].titleTwo}
               paragraphModal={texts[language].paragraphModalTwo}
               /> 
@@ -66,9 +66,9 @@ export default function Carousel() {
             <Card
               id="3"
               title={texts[language].titleThree} 
-              img="/src/assets/codificacion.png" 
+              img="/codificacion.png" 
               paragraph={texts[language].aboutThree}  
-              imgModal="/src/assets/thrid.gif"
+              imgModal="/thrid.gif"
               titleModal={texts[language].titleThree}
               paragraphModal={texts[language].paragraphModalThree}
             />
@@ -77,9 +77,9 @@ export default function Carousel() {
             <Card
               id="4"
               title={texts[language].titleFour} 
-              img="/src/assets/codificacion.png" 
+              img="/codificacion.png" 
               paragraph={texts[language].aboutThree} 
-              imgModal="/src/assets/thrid.gif"
+              imgModal="/thrid.gif"
               titleModal={texts[language].titleFour}
               paragraphModal={texts[language].paragraphModalFour}
             />

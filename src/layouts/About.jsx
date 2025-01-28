@@ -44,22 +44,22 @@ export default function About(){
             </div>
             <div className="about-container-card">
                 <div className="about-div-containar">
-                    <img className="img-about-card" src="/src/assets/06927984644db88d9f37d7edb1f243c4.gif" alt="img-about" />
+                    <img className="img-about-card" src="/06927984644db88d9f37d7edb1f243c4.gif" alt="img-about" />
                     <p className="text-about-card">{texts[language].textOne}</p>
                 </div>
                 <div>
-                    <img className="img-about-card" src="/src/assets/2ef9f2486d1996d9289dd17c6ecf1efd.gif" alt="img-about" />
+                    <img className="img-about-card" src="/2ef9f2486d1996d9289dd17c6ecf1efd.gif" alt="img-about" />
                     <p className="text-about-card">{texts[language].textTwo}</p>
                 </div>
                 <div>
-                    <img className="img-about-card" src="/src/assets/ed11b4256b8f3d6d87b72e9e0fecac9b.gif" alt="img-about" />
+                    <img className="img-about-card" src="/ed11b4256b8f3d6d87b72e9e0fecac9b.gif" alt="img-about" />
                     <p className="text-about-card">{texts[language].textThree}</p>
                 </div>
             </div>
             <div className="about-section">
                 <div>
-                    <img className="about-section_img" src="/src/assets/img-section-about.png" alt="img-section-about" />
-                    <img className="about-section_img-responsive" src="/src/assets/img-about-rspv.png" alt="img-section-about-responsive" />
+                    <img className="about-section_img" src="/img-section-about.png" alt="img-section-about" />
+                    <img className="about-section_img-responsive" src="/img-about-rspv.png" alt="img-section-about-responsive" />
                 </div>
                 <div className="about-section-text-container">
                     <p className="about-section-text">

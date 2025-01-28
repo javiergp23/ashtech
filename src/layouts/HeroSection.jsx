@@ -34,8 +34,8 @@ export default function HeroSection() {
                     <a href='#services' className="button-hero-section">{texts[language].button}</a>
                 </div>
                 <div className="hero-section_img">
-                    <img className="hero-section_img-1" src="src//assets/img-hero-section.png" alt="img-hero-section" />
-                    <img className="hero-section_img-responsive" src="src//assets/heroSection-img-responsive.png" alt="img-hero-section-responsive" />
+                    <img className="hero-section_img-1" src="/img-hero-section.png" alt="img-hero-section" />
+                    <img className="hero-section_img-responsive" src="/heroSection-img-responsive.png" alt="img-hero-section-responsive" />
                 </div>
             </div>
             <div className="hero-content-two">

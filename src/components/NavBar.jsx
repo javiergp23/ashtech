@@ -27,7 +27,7 @@ export default function NavBar() {
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary bg-transparent">
                 <div className="container-fluid">
-                    <a className="navbar-brand logo-nav" href="#"><img  className="img-logo" src="src/assets/logo1.png" alt="Logo" /></a>
+                    <a className="navbar-brand logo-nav" href="#"><img  className="img-logo" src="/logo1.png" alt="Logo" /></a>
                     <button className="navbar-toggler menu-burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -62,9 +62,9 @@ export default function NavBar() {
                             </li>
                             <li className='img-navbar-collapse_pesponsive'>
                                 <div className='container-icon-collapse-navbar-collapse'>
-                                    <img className='icon-navbar-collapse' src="src/assets/icon-navbar-collapse.png" alt="icon-navbar-collapse" />
-                                    <img className='icon-navbar-collapse_2' src="src/assets/icon-navbar-collapse.png" alt="icon-navbar-collapse" />
-                                    <img className='icon-navbar-collapse_3' src="src/assets/icon-navbar-collapse.png" alt="icon-navbar-collapse" />
+                                    <img className='icon-navbar-collapse' src="/icon-navbar-collapse.png" alt="icon-navbar-collapse" />
+                                    <img className='icon-navbar-collapse_2' src="/icon-navbar-collapse.png" alt="icon-navbar-collapse" />
+                                    <img className='icon-navbar-collapse_3' src="/icon-navbar-collapse.png" alt="icon-navbar-collapse" />
                                 </div>
                             </li>
                         </ul>
