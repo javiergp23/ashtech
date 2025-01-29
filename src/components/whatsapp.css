@@ -29,7 +29,7 @@
       position: fixed; 
       width: 60px; 
       height: 60px;
-      bottom: 80px; 
+      bottom: 128px; 
       right: 20px; 
       background-color: #ffff; 
       border-radius: 50%; 
@@ -117,7 +117,7 @@
       position: fixed; 
       width: 60px; 
       height: 60px;
-      bottom: 80px; 
+      bottom: 120px; 
       right: 20px; 
       background-color: #ffff; 
       border-radius: 50%; 

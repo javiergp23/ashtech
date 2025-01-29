@@ -138,6 +138,11 @@
         font-weight: 700;
         line-height: 61.25px;  
     }
+    .about-section-text-container{
+        max-width: 320px;
+        margin-left: 8%;
+        overflow: hidden;
+    }
     .about-section_img{
         display: none;
     }
@@ -152,7 +157,7 @@
     }
     .about-section-text-responsive{
         display: block;
-        width: 212px;
+        width: 200px;
         font-size: 14px;
         line-height: 14px;
         text-align: left;

@@ -6,7 +6,8 @@ import './workWithUs.css'
 export default function WorkWithUs(){
     const { language } = useLanguage();
     const form = useRef();
-    const [cvUrl, setCvUrl] = useState("");
+    const [file, setFile] = useState(null);
+    const [uploading, setUploading] = useState(false);
     const texts = {
         es: {
             title: "¿Te gustaria trabajar con nosotros?",
@@ -40,16 +41,37 @@ export default function WorkWithUs(){
             adj: "Attach files",
         },
     };
+    const uploadFile = async (file) => {
+        const formData = new FormData();
+        formData.append('file', file);
+
+        try{
+            setUploading(true);
+            const response = await fetch('https://file.io', {
+                method: 'POST',
+                body: formData,
+            });
+            const data = await response.json();
+            return data.link;
+        }catch(error){
+            setUploading(false);
+            console.error("Error al subir el archivo: ", error);
+            return null;
+        }
+    }
     const sendEmail = async (e) => {
         e.preventDefault();
 
-        if (!cvUrl) {
+        if (!file) {
             alert("Por favor, adjunta tu CV antes de enviar.");
             return;
         }
 
-        const formData = new FormData(form.current);
-        formData.append("cvUrl", cvUrl);
+        const fileUrl = await uploadFile(file);
+        if (!fileUrl) {
+            alert("Error al subir el archivo. Inténtalo de nuevo.");
+            return;
+        }
 
         const  publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY_CV;
         const  serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID_CV;
@@ -59,7 +81,12 @@ export default function WorkWithUs(){
             .sendForm(
                 serviceId, 
                 templateId, 
-                formData,
+                {
+                    user_name: form.current["name"].value,
+                    user_email: form.current["email"].value,
+                    user_phone: form.current["phone"].value,
+                    cv_link: fileUrl,
+                },
                 publicKey 
             )
             .then(
@@ -67,7 +94,7 @@ export default function WorkWithUs(){
                     console.log('Email enviado:', result.text);
                     alert('¡Mensaje enviado con éxito!');
                     form.current.reset();
-                    setCvUrl("");
+                    setFile(null);
                 },
                 (error) => {
                     console.error('Error al enviar el email:', error.text);
@@ -134,7 +161,8 @@ export default function WorkWithUs(){
                                         <div className='container-modal-img'>
                                             <img className='modal-img' src="/adjuntar-archivo.png" alt="" />
                                             <label className='modal-text-adj custom-file-label' htmlFor="file">{texts[language].adj}</label>
-                                            <input className='transparent-file-input' name='file' type="file" id="fileInput" accept=".pdf"  />
+                                            <input className='transparent-file-input' name='file' type="file" id="fileInput" accept=".pdf" onChange={(e) => setFile(e.target.files[0])} />
+                                            {uploading && <p>Subiendo archivo...</p>}
                                         </div>
                                     </div>
                                     <div className='container-button-modal'>    

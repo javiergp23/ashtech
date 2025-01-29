@@ -179,20 +179,20 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
     .card{
-        width: 180px;
-        height: 270px;
+        width: 280px;
+        height: 300px;
         margin: auto;
         padding: 55px 22px 55px 22px;
     }
     .card_img{
-        width: 90px;
-        height: 90px;
+        width: 95px;
+        height: 95px;
         margin-bottom: 15px;
     }
     .card_title{
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 500;
-        line-height: 20px;
+        line-height: 25px;
     }
     .modal-container-img{
         display: none;
@@ -251,7 +251,7 @@
 /* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
     .card{
-        width: 390px;
+        width: 750px;
         height: 500px;
         margin: auto;
         padding: 55px 22px 55px 22px;
@@ -330,7 +330,7 @@
 /* Pantallas de escritorio  */
 @media (min-width: 1024px) and (max-width: 1280px) {
     .card{
-        width: 390px;
+        width: 590px;
         height: 500px;
         margin: auto;
         padding: 55px 22px 55px 22px;

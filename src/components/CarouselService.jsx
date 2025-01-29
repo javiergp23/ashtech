@@ -1,10 +1,8 @@
-import { useRef } from "react";
 import { useLanguage } from '../context/LanguageContext'
 import "./carouselService.css";
 import Card from "./Card";
 
 export default function Carousel() {
-  const carouselRef = useRef(null);
   const { language } = useLanguage();
     const texts = {
         es: {
@@ -35,57 +33,87 @@ export default function Carousel() {
             paragraphModalFour: "Text descriptive",
         },
     };
-  
+    const services = [
+      {
+        id: "1",
+        title: texts[language].titleOne,
+        img: "/gestion.png",
+        paragraph: texts[language].aboutOne,
+        imgModal: "/first.gif",
+        titleModal: texts[language].titleOne,
+        paragraphModal: texts[language].paragraphModalOne,
+      },
+      {
+        id: "2",
+        title: texts[language].titleTwo,
+        img: "/candidato.png",
+        paragraph: texts[language].aboutTwo,
+        imgModal: "/second.gif",
+        titleModal: texts[language].titleTwo,
+        paragraphModal: texts[language].paragraphModalTwo,
+      },
+      {
+        id: "3",
+        title: texts[language].titleThree,
+        img: "/codificacion.png",
+        paragraph: texts[language].aboutThree,
+        imgModal: "/third.gif",
+        titleModal: texts[language].titleThree,
+        paragraphModal: texts[language].paragraphModalThree,
+      },
+      {
+        id: "4",
+        title: texts[language].titleFour,
+        img: "/codificacion.png",
+        paragraph: texts[language].aboutThree,
+        imgModal: "/third.gif",
+        titleModal: texts[language].titleFour,
+        paragraphModal: texts[language].paragraphModalFour,
+      },
+    ];
   return (
     <>
-      <div className="carousel-container-serv">
-        <div className="carousel-serv" ref={carouselRef}>
-          <div className="carousel-item-serv">
-            <Card
-               id="1"
-               title={texts[language].titleOne} 
-               img="/gestion.png" 
-               paragraph={texts[language].aboutOne}   
-               imgModal="/first.gif"
-               titleModal={texts[language].titleOne}
-               paragraphModal={texts[language].paragraphModalOne}
-            />
+      <div
+      id="carouselExampleInterval"
+      className="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div className="carousel-inner">
+        {services.map((service, index) => (
+          <div
+            key={service.id}
+            className={`carousel-item ${index === 0 ? "active" : ""}`}
+            data-bs-interval="3000"
+          >
+            <div className="carousel-item-serv">
+              <Card
+                id={service.id}
+                title={service.title}
+                img={service.img}
+                paragraph={service.paragraph}
+                imgModal={service.imgModal}
+                titleModal={service.titleModal}
+                paragraphModal={service.paragraphModal}
+              />
             </div>
-          <div className="carousel-item-serv">
-            <Card 
-              id="2"
-              title={texts[language].titleTwo} 
-              img="/candidato.png" 
-              paragraph={texts[language].aboutTwo} 
-              imgModal="/second.gif"
-              titleModal={texts[language].titleTwo}
-              paragraphModal={texts[language].paragraphModalTwo}
-              /> 
           </div>
-          <div className="carousel-item-serv">
-            <Card
-              id="3"
-              title={texts[language].titleThree} 
-              img="/codificacion.png" 
-              paragraph={texts[language].aboutThree}  
-              imgModal="/thrid.gif"
-              titleModal={texts[language].titleThree}
-              paragraphModal={texts[language].paragraphModalThree}
-            />
-          </div>
-          <div className="carousel-item-serv">
-            <Card
-              id="4"
-              title={texts[language].titleFour} 
-              img="/codificacion.png" 
-              paragraph={texts[language].aboutThree} 
-              imgModal="/thrid.gif"
-              titleModal={texts[language].titleFour}
-              paragraphModal={texts[language].paragraphModalFour}
-            />
-          </div>
-        </div>
+        ))}
       </div>
+      <button
+        className="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+      </button>
+      <button
+        className="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+      </button>
+    </div>
     </>
   );
 }
