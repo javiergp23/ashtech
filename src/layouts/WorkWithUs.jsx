@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { useLanguage } from '../context/LanguageContext'
 import emailjs from '@emailjs/browser';
 import './workWithUs.css'
@@ -6,6 +6,7 @@ import './workWithUs.css'
 export default function WorkWithUs(){
     const { language } = useLanguage();
     const form = useRef();
+    const [cvUrl, setCvUrl] = useState("");
     const texts = {
         es: {
             title: "¿Te gustaria trabajar con nosotros?",
@@ -39,10 +40,17 @@ export default function WorkWithUs(){
             adj: "Attach files",
         },
     };
-    const sendEmail = (e) => {
+    const sendEmail = async (e) => {
         e.preventDefault();
 
+        if (!cvUrl) {
+            alert("Por favor, adjunta tu CV antes de enviar.");
+            return;
+        }
+
         const formData = new FormData(form.current);
+        formData.append("cvUrl", cvUrl);
+
         const  publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY_CV;
         const  serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID_CV;
         const  templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_CV;
@@ -59,6 +67,7 @@ export default function WorkWithUs(){
                     console.log('Email enviado:', result.text);
                     alert('¡Mensaje enviado con éxito!');
                     form.current.reset();
+                    setCvUrl("");
                 },
                 (error) => {
                     console.error('Error al enviar el email:', error.text);
@@ -66,6 +75,7 @@ export default function WorkWithUs(){
                 }
             );
     };
+    
 
     return(
         <>  
@@ -124,7 +134,7 @@ export default function WorkWithUs(){
                                         <div className='container-modal-img'>
                                             <img className='modal-img' src="/adjuntar-archivo.png" alt="" />
                                             <label className='modal-text-adj custom-file-label' htmlFor="file">{texts[language].adj}</label>
-                                            <input className='transparent-file-input' name='file' type="file" id="fileInput" accept=".pdf" />
+                                            <input className='transparent-file-input' name='file' type="file" id="fileInput" accept=".pdf"  />
                                         </div>
                                     </div>
                                     <div className='container-button-modal'>    
