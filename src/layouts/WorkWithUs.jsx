@@ -8,6 +8,7 @@ export default function WorkWithUs(){
     const form = useRef();
     const [file, setFile] = useState(null);
     const [uploading, setUploading] = useState(false);
+    const [uploadSuccess, setUploadSuccess] = useState(false);
     const texts = {
         es: {
             title: "¿Te gustaria trabajar con nosotros?",
@@ -41,6 +42,23 @@ export default function WorkWithUs(){
             adj: "Attach files",
         },
     };
+
+    const handleFileChange = (e) => {
+        const selectedFile = e.target.files[0];
+
+        if (selectedFile) {
+            setUploading(true);
+            setUploadSuccess(false); 
+            
+            setTimeout(() => {
+                setFile(selectedFile);
+                setUploading(false);
+                setUploadSuccess(true);
+            }, 1500); 
+        }
+    };
+
+
     const uploadFile = async (file) => {
         const formData = new FormData();
         formData.append('file', file);
@@ -69,6 +87,7 @@ export default function WorkWithUs(){
 
         const fileUrl = await uploadFile(file);
         if (!fileUrl) {
+            setUploadSuccess(false);
             alert("Error al subir el archivo. Inténtalo de nuevo.");
             return;
         }
@@ -101,9 +120,9 @@ export default function WorkWithUs(){
                     alert('Ocurrió un error al enviar el mensaje.');
                 }
             );
+            
     };
     
-
     return(
         <>  
             <div className='work-section-responsive' >
@@ -159,14 +178,17 @@ export default function WorkWithUs(){
                                             </p>
                                         </div>
                                         <div className='container-modal-img'>
-                                            <img className='modal-img' src="/adjuntar-archivo.png" alt="" />
-                                            <label className='modal-text-adj custom-file-label' htmlFor="file">{texts[language].adj}</label>
-                                            <input className='transparent-file-input' name='file' type="file" id="fileInput" accept=".pdf" onChange={(e) => setFile(e.target.files[0])} />
-                                            {uploading && <p>Subiendo archivo...</p>}
+                                            <img className='modal-img' src="/adjuntar-archivo.png" alt="adj-png" />
+                                            <label className='modal-text-adj custom-file-label' htmlFor="file">{texts[language].adj}
+                                            </label>
+                                            <input className='transparent-file-input' name='file' type="file" id="file" accept=".pdf" onChange={handleFileChange}  />
+                                            
+                                            {uploading && <p className='upload-message'>Subiendo archivo...</p>}
+                                            {uploadSuccess && <p className='upload-confirm' style={{ color: "green" }}> {file?.name}  ✅</p>}
                                         </div>
                                     </div>
                                     <div className='container-button-modal'>    
-                                        <button  type='submit' className="button-work-with-us_modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <button  type='submit' className="button-work-with-us_modal" data-bs-toggle="modal" data-bs-target="#exampleModal" >
                                             {texts[language].buttonForm}
                                         </button>
                                     </div>

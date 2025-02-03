@@ -66,6 +66,7 @@
     font-weight: 500;
     line-height: 35.16px;
     text-align: left;
+    text-align: justify;
 }
 .about-section-text-responsive{
     display: none;
@@ -76,6 +77,7 @@
 
 .text-span{
     color: #E05330;
+    text-align: justify;
 }
 
 .space-text{
@@ -240,7 +242,7 @@
         width: 200px;
         font-size: 16px;
         line-height: 16px;
-        text-align: left;
+        text-align: justify;
         font-weight: 600;
         margin-left: 10%;
     }
@@ -529,7 +531,7 @@
         font-size: 28px;
         font-weight: 400;
         line-height: 30px;
-        text-align: left;
+        text-align: justify;
         width: 490px;
     }
     .about-section-text-responsive{
@@ -638,7 +640,7 @@
         font-size: 28px;
         font-weight: 400;
         line-height: 30px;
-        text-align: left;
+        text-align: justify;
         width: 520px;
         margin-left: 8%;
     }
@@ -747,7 +749,7 @@
         font-size: 38px;
         font-weight: 500;
         line-height: 35px;
-        text-align: left;
+        text-align: justify;
         width: 680px;
         margin-left: 8%;
     }
