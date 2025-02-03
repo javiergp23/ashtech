@@ -1,14 +1,13 @@
+import { useLanguage } from '../context/LanguageContext'
 import './heroSection.css'
 import NavBar from '../components/NavBar.jsx'
 import Description from '../components/Description.jsx'
-import { useLanguage } from '../context/LanguageContext'
-
 export default function HeroSection() {
     const { language } = useLanguage();
     const texts = {
         es: {
             title: "Codificamos el futuro de tu éxito.",
-            subtitle: "La tecnología que necesitas, a alcace de tu mano.",
+            subtitle: "La tecnología que necesitas, al alcance de tus manos.",
             button: "Ver servicios",
             titleTwo: "Nuestro compromiso",
             subtitleTwo: "Es con vos",
@@ -16,8 +15,8 @@ export default function HeroSection() {
         },
         en: {
             title: "We encode the future of your success",
-            subtitle: "The technology you need, at your fingertips.",
-            button: "See services",
+            subtitle: "The technology you need, now closer to you.",
+            button: "Our services",
             titleTwo: "Our commitment",
             subtitleTwo: "Is with you",
 

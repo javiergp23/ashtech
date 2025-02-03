@@ -10,7 +10,7 @@ export default function Services() {
             subtitleService: "Estos son nuestros servicios",
         },
         en: {
-            titleService: "We are for you",
+            titleService: "You can count on us",
             subtitleService: "These are our services",
         },
     };

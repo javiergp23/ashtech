@@ -14,8 +14,8 @@ export default function Description(){
             textDescriptionThree: "Te garantizamos soluciones tecnológicas de vanguardia adaptadas a tus necesidades.",
         },
         en: {
-            textDescriptionOne: "We offer personalized attention for problem resolution, ensuring that your projects are successfully completed.",
-            textDescriptionTwo: "We have a team of experts committed to excellence and innovation, ensuring efficient implementation and continuous support.",
+            textDescriptionOne: "We provide personalized attention to make sure that your projects are successful.",
+            textDescriptionTwo: "We have a team of experts committed to excellence and innovation so we can guarantee efficient implementation and continuous support.",
             textDescriptionThree: "We guarantee cutting-edge technological solutions tailored to your needs.",
         },
     };

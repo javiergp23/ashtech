@@ -11,7 +11,8 @@ export default function Footer(){
             about: "Sobre Nosotros",
             testimonials: "Testimonios",
             workwithUs: "Trabaja con nosotros",
-            redes: "Redes Sociales"
+            redes: "Redes Sociales",
+            phone: "011 34893255"
         },  
         en: {
             support: "Support",
@@ -20,7 +21,8 @@ export default function Footer(){
             about: "About Us",
             testimonials: "Testimonials",
             workwithUs: "Work with Us",
-            redes: "Social Networks"
+            redes: "Social Networks",
+            phone: "+54 9 15 011 34893255"
         },
     };
 
@@ -37,15 +39,15 @@ export default function Footer(){
                     </nav>
                 </div>
                 <div className="container-item-footer container-item-footer_soporte container-res-hidden">
-                    <p className="title-footer">{texts[language].support}</p>
+                    {/* <p className="title-footer">{texts[language].support}</p> */}
                     <a className="text-footer-links" href="#services">{texts[language].service}</a>
                     <a className="text-footer-links" href="#about">{texts[language].about}</a>
                     <a className="text-footer-links" href="#testimonios">{texts[language].testimonials}</a>
                     <a className="text-footer-links" href="#work">{texts[language].workwithUs}</a>
                 </div>
                 <div className="container-item-footer container-item-footer_contacto container-res-hidden">
-                    <p className="title-footer">Contacto</p>
-                    <p className="text-footer-links">011 34893455</p>
+                    <p className="title-footer">{texts[language].contact}</p>
+                    <p className="text-footer-links">{texts[language].phone}</p>
                     <p className="text-footer-links">ejemplo@gmail.com</p>
                 </div>
                 <div className='container-item-res-mobile'>
@@ -76,7 +78,7 @@ export default function Footer(){
                         {texts[language].contact}
                         </button>
                         <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">011 34893455</a></li>
+                            <li><a className="dropdown-item" href="#">{texts[language].phone}</a></li>
                             <li><a className="dropdown-item" href="#">ejemplo@gmail.com</a></li>
                         </ul>
                     </div>

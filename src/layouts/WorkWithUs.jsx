@@ -28,9 +28,9 @@ export default function WorkWithUs(){
         en: {
             title: "Do you want to work with us?",
             subtitle: "Join a dynamic and innovative team where your professional growth is a priority.",
-            paragraphOne: "We value your creativity, talent, and your desire to learn, here you will have the opportunity to mark the difference.",
-            paragraphTwo: "We invite you to join and you decide the career you want to pursue.",
-            sum:  "Sum up to our team!",
+            paragraphOne: "We value your creativity , talent, and your desire to learn. Here, you will have the opportunity to make a difference.",
+            paragraphTwo: "The invitation is for you to join us and decide the career path you want.",
+            sum:  "Be part of our team!",
             button: "Attach CV",
             formTitle: "Create your dream career",
             name: "Name and surname*",
@@ -106,7 +106,7 @@ export default function WorkWithUs(){
 
     return(
         <>  
-            <div className='work-section-responsive' id='work'>
+            <div className='work-section-responsive' >
                 <h1 className='work-section-text_responsive-title'>
                     {texts[language].title}
                 </h1>
@@ -114,7 +114,7 @@ export default function WorkWithUs(){
                     {texts[language].subtitle}
                 </p>
             </div>
-            <div className="work-section">
+            <div className="work-section"id="work" >
                 <div className="work-section-text-container" >
                     <h1 className="work-title">{texts[language].title}</h1>
                     <p className="work-section-text">

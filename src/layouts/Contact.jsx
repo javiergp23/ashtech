@@ -22,7 +22,7 @@ export default function Contact(){
         },
         en: {
             titleContact: "Contact us",
-            subtitleContact: "We would like to fill in the following form.",
+            subtitleContact: "Please fill out the following form, so we can contact you.",
             name: "Name and surname",
             email: "Email",
             telefono: "Phone",

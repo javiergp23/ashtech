@@ -1,6 +1,6 @@
 import './card.css';
 
-export default function Card({id, title, img, paragraph, imgModal, titleModal, paragraphModal}) {
+export default function Card({id, title, img, paragraph, imgModal, titleModal, paragraphModal, button}) {
     return(
         <>
             <div className="card" type="button" data-bs-toggle="modal" data-bs-target={`#${id}`}>
@@ -39,9 +39,9 @@ export default function Card({id, title, img, paragraph, imgModal, titleModal, p
                     </div>
                 </div>
                 <div className="container-button-modal">
-                    <button className="button-modal">
-                        Consultar
-                    </button>
+                    <a className="button-modal" href="https://wa.me/5491157302130" target="_blank" >
+                        {button}
+                    </a>
                 </div>
                 </div>
             </div>

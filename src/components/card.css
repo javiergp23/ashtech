@@ -94,6 +94,7 @@
     border: none;
     margin-bottom: 30px;
     margin-right: 6%;
+    text-decoration: none;
 }
 
 .container-button-modal{
@@ -174,6 +175,7 @@
         padding: 10px 38px 10px 38px;
         margin-bottom: 30px;
         margin-right: 6%;
+        text-decoration: none;
     }
 }
 
@@ -245,6 +247,7 @@
         padding: 10px 38px 10px 38px;
         margin-bottom: 30px;
         margin-right: 6%;
+        text-decoration: none;
     }
 }
 
@@ -324,6 +327,7 @@
         padding: 10px 38px 10px 38px;
         margin-bottom: 30px;
         margin-right: 6%;
+        text-decoration: none;
     }
 }
 
@@ -404,6 +408,7 @@
         padding: 10px 38px 10px 38px;
         margin-bottom: 30px;
         margin-right: 6%;
+        text-decoration: none;
     }
 }
 
@@ -484,6 +489,7 @@
         padding: 10px 38px 10px 38px;
         margin-bottom: 30px;
         margin-right: 6%;
+        text-decoration: none;
     }
 }
  
@@ -562,6 +568,7 @@
         padding: 10px 38px 10px 38px;
         margin-bottom: 30px;
         margin-right: 6%;
+        text-decoration: none;
     }
 } 
 @media (min-width: 1921px) and (max-width: 2560px) {
@@ -638,6 +645,7 @@
         padding: 10px 38px 10px 38px;
         margin-bottom: 30px;
         margin-right: 6%;
+        text-decoration: none;
     }
     .carousel-item-serv {
         height: 470px;

@@ -387,6 +387,9 @@ background-color: transparent !important;
     .bg-link{
         background-color: transparent !important;
     }
+    .container-item-footer_soporte{
+        margin-top: 17%;
+    }
 }
  
   /* Pantallas de escritorio grandes  */
@@ -458,6 +461,7 @@ background-color: transparent !important;
 
     .container-item-footer_soporte{
         margin-right: 12%;
+    
     }
    
  } 
