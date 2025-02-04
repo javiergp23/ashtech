@@ -194,7 +194,7 @@
 /* Tablets  */
 @media (min-width: 768px) and (max-width: 1024px) {
   .carousel{
-    width: 95%;
+    width: 100%;
     height: 600px;
     margin-top: 15%;
     position: relative;
@@ -213,7 +213,7 @@
     border: none;
     border-radius: 30px;
     min-height: 50px;
-    min-width: 220px;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,12 +228,12 @@
   .carousel-container{
     display: flex;
     width: 100%;
-    gap: 0;
+    gap: 11rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
-    padding-left: calc((450px - 300px) / 2); /* Centrar la primera tarjeta */
-    padding-right: calc((450px - 300px) / 2);
+    padding-left: calc((400px - 300px) / 2); /* Centrar la primera tarjeta */
+    padding-right: calc((400px - 300px) / 2);
     position: relative;
    
   }
@@ -267,178 +267,215 @@
 /* Pantallas de escritorio */
 @media (min-width: 1024px) and (max-width: 1280px) {
   .carousel{
-    margin: auto;
-  }
-  .carousel-container-serv {
+    width: 100%;
+    height: 600px;
+    margin-top: 15%;
     position: relative;
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
   }
-  .carousel-serv {
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    scrollbar-width: none; 
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
   }
-  .carousel-serv::-webkit-scrollbar {
-    display: none; 
-  }
-  .carousel-item-serv {
-    height: 550px;
-    width: 390px;
-    margin: 0 22px;
-    background: #012E8B;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    border-radius: 8px;
-  }
-  .carousel-button-serv {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+  .carousel-card {
+    width: 232px;
+    margin: 80px 5px 0 4px;
+    padding: 60px;
+}
+  .card-container{
+    background-color: #ffffff00;
     border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    z-index: 10;
+    border-radius: 30px;
+    min-height: 50px;
+    min-width: 350px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    scroll-snap-align: center;
+    overflow: visible;
+    position: relative;
+    margin-top: 5px;
+    pointer-events: auto;
+  } 
+
+  .carousel-container{
+    display: flex;
+    width: 100%;
+    gap: 11rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding-left: calc((400px - 300px) / 2); /* Centrar la primera tarjeta */
+    padding-right: calc((400px - 300px) / 2);
+    position: relative;
+   
   }
-  .carousel-button-serv.left {
-    left: 10px;
-  }
-  .carousel-button-serv.right {
-    right: 10px;
-  }
-  .carousel-button-serv:hover {
-    background: rgba(0, 0, 0, 0.7);
-  }
+  
+
+  .carousel-container-serv {
+      position: relative;
+      width: 98%;
+      margin: 0 15px 0 15px;
+      overflow: hidden;
+    }
+    .carousel-serv {
+      display: flex;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      scrollbar-width: none; 
+      
+    }
+    .carousel-serv::-webkit-scrollbar {
+      display: none; 
+    }
+    .carousel-item-serv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
 }
 
  /* Pantallas de escritorio pequeñas  */
 @media (min-width: 1281px) and (max-width: 1440px) {
   .carousel{
-    margin: auto;
-  }
-  .carousel-container-serv {
+    width: 100%;
+    height: 600px;
+    margin-top: 15%;
     position: relative;
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
   }
-  .carousel-serv {
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    scrollbar-width: none; 
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
   }
-  .carousel-serv::-webkit-scrollbar {
-    display: none; 
-  }
-  .carousel-item-serv {
-    height: 550px;
-    width: 390px;
-    margin: 0 22px;
-    background: #012E8B;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    border-radius: 8px;
-  }
-  .carousel-button-serv {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+  .carousel-card {
+    width: 232px;
+    margin: 80px 4px 0 4px;
+    padding: 60px;
+}
+  .card-container{
+    background-color: #ffffff00;
     border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    z-index: 10;
+    border-radius: 30px;
+    min-height: 50px;
+    min-width: 460px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    scroll-snap-align: center;
+    overflow: visible;
+    position: relative;
+    margin-top: 5px;
+    pointer-events: auto;
+  } 
+
+  .carousel-container{
+    display: flex;
+    width: 100%;
+    gap: 20rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding-left: calc((400px - 300px) / 2); /* Centrar la primera tarjeta */
+    padding-right: calc((400px - 300px) / 2);
+    position: relative;
+   
   }
-  .carousel-button-serv.left {
-    left: 10px;
-  }
-  .carousel-button-serv.right {
-    right: 10px;
-  }
-  .carousel-button-serv:hover {
-    background: rgba(0, 0, 0, 0.7);
-  }
+  
+  .carousel-container-serv {
+      position: relative;
+      width: 98%;
+      margin: 0 15px 0 15px;
+      overflow: hidden;
+    }
+    .carousel-serv {
+      display: flex;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      scrollbar-width: none; 
+      
+    }
+    .carousel-serv::-webkit-scrollbar {
+      display: none; 
+    }
+    .carousel-item-serv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
 }
 
 /* Pantallas de escritorio grandes */
 @media (min-width: 1441px) and (max-width: 1920px) {
   .carousel{
-    margin: auto;
-  }
-  .carousel-container-serv {
+    width: 100%;
+    height: 600px;
+    margin-top: 15%;
     position: relative;
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
   }
-  .carousel-serv {
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    scrollbar-width: none; 
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
   }
-  .carousel-serv::-webkit-scrollbar {
-    display: none; 
-  }
-  .carousel-item-serv {
-    height: 550px;
-    width: 390px;
-    margin: 0 22px;
-    background: #012E8B;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    border-radius: 8px;
-  }
-  .carousel-button-serv {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+  .carousel-card {
+    width: 232px;
+    margin: 80px 4px 0 4px;
+    padding: 60px;
+}
+  .card-container{
+    background-color: #ffffff00;
     border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    z-index: 10;
+    border-radius: 30px;
+    min-height: 50px;
+    min-width: 460px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    scroll-snap-align: center;
+    overflow: visible;
+    position: relative;
+    margin-top: 5px;
+    pointer-events: auto;
+  } 
+
+  .carousel-container{
+    display: flex;
+    width: 100%;
+    gap: 20rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding-left: calc((400px - 300px) / 2); /* Centrar la primera tarjeta */
+    padding-right: calc((400px - 300px) / 2);
+    position: relative;
+   
   }
-  .carousel-button-serv.left {
-    left: 10px;
-  }
-  .carousel-button-serv.right {
-    right: 10px;
-  }
-  .carousel-button-serv:hover {
-    background: rgba(0, 0, 0, 0.7);
-  }
+  
+  .carousel-container-serv {
+      position: relative;
+      width: 98%;
+      margin: 0 15px 0 15px;
+      overflow: hidden;
+    }
+    .carousel-serv {
+      display: flex;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      scrollbar-width: none; 
+      
+    }
+    .carousel-serv::-webkit-scrollbar {
+      display: none; 
+    }
+    .carousel-item-serv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
 } 
 
 
