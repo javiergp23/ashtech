@@ -76,7 +76,7 @@ background-color: transparent !important;
     }
     
     .logo-div{
-        margin-right: 10%;
+        margin-right: 8%;
     }
     .logo-footer{
         width: 200px;
@@ -122,6 +122,9 @@ background-color: transparent !important;
     }
     .list-nav-footer{
         margin-top: 4px;
+    }
+    .dropdown{
+        width: 20px;
     }
 }
 

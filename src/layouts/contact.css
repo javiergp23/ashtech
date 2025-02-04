@@ -116,7 +116,7 @@ input::placeholder{
         width: 100%;
     }
     input{
-        width: 330px;
+        width: 320px;
         margin-left: 5%;
     }
     label{
@@ -139,7 +139,7 @@ input::placeholder{
 
     }
     .label-menssage{
-        width: 330px;
+        width: 320px;
         height: 100px;
         overflow-wrap: break-word;
         word-wrap: break-word;

@@ -137,6 +137,9 @@
         margin-bottom: 20%;
         margin-right: 32%;
     }
+    .work-img{
+        margin-left: 1%;
+    }
 
     /* MODAL CV */
     .modal-title-cv{

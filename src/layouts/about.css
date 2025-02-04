@@ -141,9 +141,9 @@
         line-height: 61.25px;  
     }
     .about-section-text-container{
-        max-width: 320px;
+        max-width: 210px;
         margin-left: 8%;
-        overflow: hidden;
+        
     }
     .about-section_img{
         display: none;
@@ -152,19 +152,19 @@
         display: block;
         width: 138px;
         height: 180px; 
-        margin: 0 0 0 20%; 
+        margin: 0 0 0 16%; 
     }
     .about-section-text{
         display: none;
     }
     .about-section-text-responsive{
         display: block;
-        width: 200px;
+        width: 160px;
         font-size: 14px;
         line-height: 14px;
         text-align: left;
         font-weight: 600;
-        margin-left: 6%;
+        margin-left: 2%;
     }
     .responsive-section{
         display: block;
