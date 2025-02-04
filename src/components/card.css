@@ -94,7 +94,6 @@
     border: none;
     margin-bottom: 30px;
     margin-right: 6%;
-    text-decoration: none;
 }
 
 .container-button-modal{
@@ -109,9 +108,9 @@
 /* Teléfonos  */
 @media (min-width: 321px) and (max-width: 480px) {
     .card{
-        width: 180px;
+        width: 210px;
         height: 270px;
-        margin: auto;
+        margin: 140px 0px 0 0px;
         padding: 55px 22px 55px 22px;
     }
     .card_img{
@@ -175,7 +174,6 @@
         padding: 10px 38px 10px 38px;
         margin-bottom: 30px;
         margin-right: 6%;
-        text-decoration: none;
     }
 }
 
@@ -247,7 +245,7 @@
         padding: 10px 38px 10px 38px;
         margin-bottom: 30px;
         margin-right: 6%;
-        text-decoration: none;
+        
     }
 }
 

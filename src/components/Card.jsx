@@ -3,7 +3,7 @@ import './card.css';
 export default function Card({id, title, img, paragraph, imgModal, titleModal, paragraphModal, button}) {
     return(
         <>
-            <div className="card" type="button" data-bs-toggle="modal" data-bs-target={`#${id}`}>
+            <div className="card" type="button" data-bs-toggle="modal" data-bs-target={`#${id}`} >
                 <img className="card_img" src={img} alt="img-card" />
                 <h1 className="card_title">
                     {title}

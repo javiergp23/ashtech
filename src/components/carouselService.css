@@ -53,8 +53,51 @@
 /* Teléfonos  */
 @media (min-width: 321px) and (max-width: 480px) {
   .carousel{
-    margin: auto;
+    width: 95%;
+    height: 600px;
+    margin-top: 15%;
+    position: relative;
   }
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel-card {
+    width: 232px;
+    margin: 80px 5px 0 4px;
+    padding: 60px;
+}
+  .card-container{
+    background-color: #ffffff00;
+    border: none;
+    border-radius: 30px;
+    min-height: 50px;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+    overflow: visible;
+    position: relative;
+    margin-top: 5px;
+    pointer-events: auto;
+  } 
+
+  .carousel-container{
+    display: flex;
+    width: 100%;
+    gap: 1.2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding-left: calc((450px - 300px) / 2); /* Centrar la primera tarjeta */
+    padding-right: calc((450px - 300px) / 2);
+    position: relative;
+   
+  }
+  
+
   .carousel-container-serv {
       position: relative;
       width: 98%;

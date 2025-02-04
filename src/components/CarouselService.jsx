@@ -1,9 +1,12 @@
+import { useEffect, useRef } from "react";
 import { useLanguage } from '../context/LanguageContext'
 import "./carouselService.css";
 import Card from "./Card";
 
 export default function Carousel() {
   const { language } = useLanguage();
+  const carouselRef = useRef(null);
+
     const texts = {
         es: {
             titleOne: "Gestión de proyectos",
@@ -77,50 +80,80 @@ export default function Carousel() {
         button: texts[language].button
       },
     ];
+
+    useEffect(() => {
+      const carousel = carouselRef.current;
+      if (!carousel) return;
+  
+      const cards = Array.from(carousel.children);
+      const contenido = carousel.parentElement;
+      const cardWidth = cards[0].offsetWidth + 20;
+      const paddingOffset = (contenido.offsetWidth - cards[0].offsetWidth) / 2;
+  
+      let currentIndex = 1;
+      let interval;
+  
+      const firstClone = cards[0].cloneNode(true);
+      const lastClone = cards[cards.length - 1].cloneNode(true);
+      
+      carousel.appendChild(firstClone);
+      carousel.insertBefore(lastClone, carousel.firstChild);
+  
+      function scrollToCard(index, smooth = true) {
+        carousel.scrollTo({
+          left: index * cardWidth - paddingOffset,
+          behavior: smooth ? "smooth" : "auto",
+        });
+      }
+  
+      function autoScroll() {
+        currentIndex++;
+        scrollToCard(currentIndex);
+        if (currentIndex === cards.length + 1) {
+          setTimeout(() => {
+            currentIndex = 1;
+            scrollToCard(currentIndex, false);
+          }, 500);
+        }
+      }
+  
+      setTimeout(() => scrollToCard(currentIndex, false), 100);
+      interval = setInterval(autoScroll, 4000);
+  
+      carousel.addEventListener("scroll", () => {
+        if (carousel.scrollLeft <= 0) {
+          setTimeout(() => {
+            currentIndex = cards.length;
+            scrollToCard(currentIndex, false);
+          }, 500);
+        }
+      });
+  
+      return () => clearInterval(interval);
+    }, []);
+
+
   return (
     <>
-      <div
-      id="carouselExampleInterval"
-      className="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div className="carousel-inner">
-        {services.map((service, index) => (
-          <div
-            key={service.id}
-            className={`carousel-item ${index === 0 ? "active" : ""}`}
-            data-bs-interval="3000"
-          >
-            <div className="carousel-item-serv">
-              <Card
-                id={service.id}
-                title={service.title}
-                img={service.img}
-                paragraph={service.paragraph}
+      <div className="carousel">
+        <div className="carousel-container" ref={carouselRef}>
+          {services.map((service, index) => (
+            <div className={`card-container ${index === 0 ? "active" : ""}`} key={service.id}>
+              <Card 
+                id={service.id} 
+                key={service.id} 
+                title={service.title} 
+                img={service.img} 
+                paragraph={service.paragraph} 
                 imgModal={service.imgModal}
                 titleModal={service.titleModal}
                 paragraphModal={service.paragraphModal}
                 button={service.button}
-              />
+                />   
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-      <button
-        className="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev"
-      >
-      </button>
-      <button
-        className="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next"
-      >
-      </button>
-    </div>
     </>
   );
 }
