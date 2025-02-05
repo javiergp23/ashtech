@@ -90,7 +90,7 @@ export default function WorkWithUs(){
 
     return(
         <>  
-            <div className='work-section-responsive' >
+            <div className='work-section-responsive' id="work" >
                 <h1 className='work-section-text_responsive-title'>
                     {texts[language].title}
                 </h1>

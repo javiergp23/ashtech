@@ -93,6 +93,7 @@ input::placeholder{
         display: block;
         margin-top: 20%;
         margin-bottom: 18%;
+        margin-left: 5%;
     }
     .title-form{
         font-size: 22px;

@@ -58,7 +58,7 @@ export default function Footer(){
                         <ul className="dropdown-menu">
                             <li><a className="link-nav-footer" href="#services">{texts[language].service}</a></li>
                             <li><a className="link-nav-footer" href="#about">{texts[language].about}</a></li>
-                            <li><a className="link-nav-footer" href="#about">{texts[language].testimonials}</a></li>
+                            <li><a className="link-nav-footer" href="#testimonios">{texts[language].testimonials}</a></li>
                             <li><a className="link-nav-footer" href="#work">{texts[language].workwithUs}</a></li>
                         </ul>
                     </div>
