@@ -5,10 +5,11 @@ import './workWithUs.css'
 
 export default function WorkWithUs(){
     const { language } = useLanguage();
-    const form = useRef();
     const [file, setFile] = useState(null);
     const [uploading, setUploading] = useState(false);
     const [uploadSuccess, setUploadSuccess] = useState(false);
+    const [errors, setErrors] = useState({});
+    const form = useRef();
     const texts = {
         es: {
             title: "¿Te gustaria trabajar con nosotros?",
@@ -41,6 +42,25 @@ export default function WorkWithUs(){
             validation: "Required fields",
             adj: "Attach files",
         },
+    };
+
+    const validateForm = () => {
+        const newErrors = {};
+        const name = form.current["name"].value.trim();
+        const email = form.current["email"].value.trim();
+        const phone = form.current["phone"].value.trim();
+        
+        if (!name) newErrors.name = "El nombre es obligatorio.";
+        if (!email) newErrors.email = "El correo electrónico es obligatorio.";
+        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) newErrors.email = "Correo electrónico no válido.";
+        
+        if (!phone) newErrors.phone = "El teléfono es obligatorio.";
+        else if (!/^\d{10,15}$/.test(phone)) newErrors.phone = "Teléfono no válido.";
+        
+        if (!file) newErrors.file = "Adjunta tu CV antes de enviar.";
+        
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
     };
 
     const handleFileChange = (e) => {
@@ -79,6 +99,8 @@ export default function WorkWithUs(){
     }
     const sendEmail = async (e) => {
         e.preventDefault();
+
+        if (!validateForm()) return;
 
         if (!file) {
             alert("Por favor, adjunta tu CV antes de enviar.");
@@ -157,7 +179,7 @@ export default function WorkWithUs(){
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div className="modal-body">
-                                <form  className="form" ref={form} onSubmit={sendEmail}>
+                                <form  className="form" ref={form} onSubmit={sendEmail} >
                                 <h1 className="modal-title fs-5 modal-title-cv" id="exampleModalLabel">{texts[language].formTitle}</h1>
                                     <div className="item-form-container">
                                         <label className='label-modal_cv' htmlFor="name">{texts[language].name}</label>

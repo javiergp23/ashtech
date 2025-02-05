@@ -78,7 +78,7 @@ export default function Contact(){
                     </div>
                     <div className="item-form-container item-form-container_contact">
                         <label htmlFor="message">{texts[language].mensaje}</label>
-                         <textarea className="label-menssage input" name='message' type="textarea" placeholder={texts[language].placeholderMessage} required />
+                         <textarea className="label-menssage " name='message' type="textarea" placeholder={texts[language].placeholderMessage} required />
                     </div>
                     <div className="boton-container">
                         <button type='submit' className="button-form">{texts[language].buttonContact}</button>

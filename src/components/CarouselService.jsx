@@ -86,22 +86,18 @@ export default function Carousel() {
       if (!carousel) return;
   
       const cards = Array.from(carousel.children);
-      const contenido = carousel.parentElement;
-      const cardWidth = cards[0].offsetWidth + 20;
-      const paddingOffset = (contenido.offsetWidth - cards[0].offsetWidth) / 2;
-  
-      let currentIndex = 1;
-      let interval;
-  
       const firstClone = cards[0].cloneNode(true);
       const lastClone = cards[cards.length - 1].cloneNode(true);
-      
+  
       carousel.appendChild(firstClone);
       carousel.insertBefore(lastClone, carousel.firstChild);
   
+      const cardWidth = cards[0].offsetWidth + 20;
+      let currentIndex = 1;
+  
       function scrollToCard(index, smooth = true) {
         carousel.scrollTo({
-          left: index * cardWidth - paddingOffset,
+          left: index * cardWidth,
           behavior: smooth ? "smooth" : "auto",
         });
       }
@@ -109,6 +105,7 @@ export default function Carousel() {
       function autoScroll() {
         currentIndex++;
         scrollToCard(currentIndex);
+  
         if (currentIndex === cards.length + 1) {
           setTimeout(() => {
             currentIndex = 1;
@@ -117,17 +114,7 @@ export default function Carousel() {
         }
       }
   
-      setTimeout(() => scrollToCard(currentIndex, false), 100);
-      interval = setInterval(autoScroll, 4000);
-  
-      carousel.addEventListener("scroll", () => {
-        if (carousel.scrollLeft <= 0) {
-          setTimeout(() => {
-            currentIndex = cards.length;
-            scrollToCard(currentIndex, false);
-          }, 500);
-        }
-      });
+      let interval = setInterval(autoScroll, 3000);
   
       return () => clearInterval(interval);
     }, []);

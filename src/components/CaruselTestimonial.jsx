@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import "./carouselTestimonial.css";
 
-
 export default function CarouselTestimonial() {
   const { language } = useLanguage();
   const carouselRef = useRef(null);
@@ -39,13 +38,13 @@ export default function CarouselTestimonial() {
     {
       id: 2,
       image: "/testimonio2.png",
-      name: "María González",
+      name: "Sofia Montiel",
       description: texts[language].descriptionTwo,
     },
     {
       id: 3,
       image: "/testimonio1.png",
-      name: "Carlos Martínez",
+      name: "Carlos Guerrero",
       description: texts[language].descriptionThree,
     },
     {
@@ -54,29 +53,36 @@ export default function CarouselTestimonial() {
       name: "María González",
       description: texts[language].descriptionFour,
     },
+    {
+      id: 5,
+      image: "/testimonio2.png",
+      name: "Matias Hernandez",
+      description: texts[language].descriptionFour,
+    },
+    {
+      id: 6,
+      image: "/testimonio2.png",
+      name: "Julian Marcone",
+      description: texts[language].descriptionFour,
+    },
   ];
 
   useEffect(() => {
     const carousel = carouselRef.current;
     if (!carousel) return;
 
-    const cards = Array.from(carousel.children);
-    const contenido = carousel.parentElement;
-    const cardWidth = cards[0].offsetWidth + 20;
-    const paddingOffset = (contenido.offsetWidth - cards[0].offsetWidth) / 2;
-
-    let currentIndex = 1;
     let interval;
+    let currentIndex = 1; 
 
-    const firstClone = cards[0].cloneNode(true);
-    const lastClone = cards[cards.length - 1].cloneNode(true);
-    
-    carousel.appendChild(firstClone);
-    carousel.insertBefore(lastClone, carousel.firstChild);
+    const firstClone = { ...testimonials[0], id: "first-clone" };
+    const lastClone = { ...testimonials[testimonials.length - 1], id: "last-clone" };
+
+    const extendedTestimonials = [lastClone, ...testimonials, firstClone];
 
     function scrollToCard(index, smooth = true) {
+      const cardWidth = carousel.children[0].offsetWidth + 20;
       carousel.scrollTo({
-        left: index * cardWidth - paddingOffset,
+        left: index * cardWidth,
         behavior: smooth ? "smooth" : "auto",
       });
     }
@@ -84,7 +90,8 @@ export default function CarouselTestimonial() {
     function autoScroll() {
       currentIndex++;
       scrollToCard(currentIndex);
-      if (currentIndex === cards.length + 1) {
+
+      if (currentIndex === extendedTestimonials.length - 1) {
         setTimeout(() => {
           currentIndex = 1;
           scrollToCard(currentIndex, false);
@@ -95,30 +102,24 @@ export default function CarouselTestimonial() {
     setTimeout(() => scrollToCard(currentIndex, false), 100);
     interval = setInterval(autoScroll, 4000);
 
-    carousel.addEventListener("scroll", () => {
-      if (carousel.scrollLeft <= 0) {
-        setTimeout(() => {
-          currentIndex = cards.length;
-          scrollToCard(currentIndex, false);
-        }, 500);
-      }
-    });
-
     return () => clearInterval(interval);
   }, []);
-
 
   return (
     <>
       <div className="contenido-2">
         <div className="carousel-2" ref={carouselRef}>
-          {testimonials.map((testimonial) => (
-            <div className="card-2" key={testimonial.id}>
-              <img src={testimonial.image} alt={testimonial.name} className="img-card-2" />
-              <p className="testimonial-description">{testimonial.description}</p>
-              <h3 className="testimonial-name">{testimonial.name}</h3>
-            </div>
-          ))}
+        {[
+          { ...testimonials[testimonials.length - 1], id: "last-clone" },
+          ...testimonials,
+          { ...testimonials[0], id: "first-clone" },
+        ].map((testimonial) => (
+          <div className="card-2" key={testimonial.id}>
+            <img src={testimonial.image} alt={testimonial.name} className="img-card-2" />
+            <p className="testimonial-description">{testimonial.description}</p>
+            <h3 className="testimonial-name">{testimonial.name}</h3>
+          </div>
+        ))}
         </div>
       </div>
     </>
