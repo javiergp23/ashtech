@@ -19,7 +19,7 @@ export default function Carousel() {
             paragraphModalOne: "Convertí tus ideas en realidad, desde la planificación, hasta la entrega final, nuestro equipo se asegura de que cada fase esté alineada con sus objetivos, maximizando recursos y minimizando riesgos. Nos especializamos en liderar proyectos tecnológicos con precisión, asegurando cumplimiento de plazos, presupuestos y la calidad que su negocio necesita para crecer.",
             paragraphModalTwo: "Encuentre el talento tecnológico perfecto para su equipo. Con nuestro servicio de staffing especializado, conectamos su empresa con profesionales altamente calificados en el área de TI, adaptados a sus necesidades. Ya sea que necesite personal temporal, a largo plazo o para proyectos específicos, nosotros le proveemos de los mejores expertos, listos para impulsar sus metas empresariales.",
             paragraphModalThree: "Cada negocio es único, y sus soluciones tecnológicas también deberían serlo. Creamos desarrollos de software a la medida que responden directamente a sus desafíos específicos, integrando perfectamente nuestros sistemas a sus operaciones. Desde plataformas personalizadas hasta aplicaciones móviles y web, desarrollamos con innovación y precisión para garantizar el máximo rendimiento y escalabilidad.",
-            paragraphModalFour: "texto descriptivo",
+            paragraphModalFour: "Mantén tu infraestructura de TI funcionando a la perfección con nuestro servicio de soporte técnico especializado. Brindamos soluciones rápidas y eficientes para resolver cualquier problema que puedas enfrentar, desde inconvenientes con el software hasta fallas en el hardware. Nuestro equipo de expertos está disponible para ofrecerte asistencia personalizada, ya sea de forma remota o en sitio, garantizando que tus sistemas estén siempre operativos y tu negocio siga avanzando sin interrupciones.",
             button: "Consultar"
 
         },
@@ -34,7 +34,7 @@ export default function Carousel() {
             paragraphModalOne: "Convert your ideas into reality, from planning to delivery. Our team ensures that each phase is aligned with your goals, maximizing resources and minimizing risks. We specialize in leading technical projects with precision in order to meet deadlines within the budget and achieve the quality that your business requires.",
             paragraphModalTwo: "Find the perfect technical talent for your team. With our specialized staffing service, we connect your company with highly qualified IT professionals in the IT area, adapted to your needs. Whether you need temporary, long-term, or specific projects, we provide you with the best experts ready to take your business goals forward.",
             paragraphModalThree: "Each business is unique, and its technical solutions should be. We develop software on a measured basis, responding directly to your specific challenges, integrating perfectly our systems to your operations. From custom platforms to mobile and web applications, we develop with innovation and precision to ensure maximum performance and scalability.",
-            paragraphModalFour: "Text descriptive",
+            paragraphModalFour: "Keep your IT infrastructure running smoothly with our specialized technical support service. We provide fast and efficient solutions to resolve any issues you may face, from software glitches to hardware failures. Our team of experts is available to offer personalized assistance, whether remotely or on-site, ensuring your systems are always operational and your business continues to move forward without interruptions.",
             button: "Consult"
         },
     };
@@ -64,7 +64,7 @@ export default function Carousel() {
         title: texts[language].titleThree,
         img: "/codificacion.png",
         paragraph: texts[language].aboutThree,
-        imgModal: "/third.gif",
+        imgModal: "/thrid.gif",
         titleModal: texts[language].titleThree,
         paragraphModal: texts[language].paragraphModalThree,
         button: texts[language].button
@@ -72,11 +72,11 @@ export default function Carousel() {
       {
         id: "4",
         title: texts[language].titleFour,
-        img: "/codificacion.png",
+        img: "/servicio-tecnico.png",
         paragraph: texts[language].aboutThree,
-        imgModal: "/third.gif",
+        imgModal: "/servicio-tecnico-gif.gif",
         titleModal: texts[language].titleFour,
-        paragraphModal: texts[language].paragraphModalFour,
+        paragraphModal: texts[language].paragraphModalFour, 
         button: texts[language].button
       },
     ];
