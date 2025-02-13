@@ -164,7 +164,7 @@ export default function WorkWithUs(){
                     {texts[language].subtitle}
                 </p>
             </div>
-            <div className="work-section"id="work" >
+            <div className="work-section">
                 <div className="work-section-text-container" >
                     <h1 className="work-title">{texts[language].title}</h1>
                     <p className="work-section-text">

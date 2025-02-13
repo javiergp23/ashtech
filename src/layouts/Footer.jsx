@@ -12,7 +12,7 @@ export default function Footer(){
             testimonials: "Testimonios",
             workwithUs: "Trabaja con nosotros",
             redes: "Redes Sociales",
-            phone: "011 34893255"
+            phone: "+54 9 11 57302130"
         },  
         en: {
             support: "Support",
@@ -22,7 +22,7 @@ export default function Footer(){
             testimonials: "Testimonials",
             workwithUs: "Work with Us",
             redes: "Social Networks",
-            phone: "+54 9 15 011 34893255"
+            phone: "+54 9 11 57302130"
         },
     };
 
@@ -32,9 +32,9 @@ export default function Footer(){
                 <div className="container-item-footer logo-div">
                     <img  className="logo-footer" src="/logo1.png" alt="Logo-footer" />
                     <nav className="nav-footer container-res-hidden">
-                        <a href="#"><img className="logo-social" src="/instagram-logo-24.png" alt="" /></a>
-                        <a href="#"><img className="logo-social" src="/linkedin-logo-24.png" alt="" /></a>
-                        <a href="#"><img className="logo-social" src="/facebook-logo-24.png" alt="" /></a>
+                        <a href="https://www.instagram.com/ashsamtech/profilecard/?igsh=MW12Yngyc2trYnRz" target="_blank"><img className="logo-social" src="/instagram-logo-24.png" alt="" /></a>
+                        <a href="https://www.linkedin.com/company/106369421/admin/dashboard/" target="_blank"><img className="logo-social" src="/linkedin-logo-24.png" alt="" /></a>
+                        <a href="https://www.facebook.com/share/18zdUCQPAQ/" target="_blank"><img className="logo-social" src="/facebook-logo-24.png" alt="" /></a>
                         <a href="#"><img className="logo-social" src="/youtube-logo-24.png" alt="" /></a>
                     </nav>
                 </div>
@@ -48,7 +48,7 @@ export default function Footer(){
                 <div className="container-item-footer container-item-footer_contacto container-res-hidden">
                     <p className="title-footer">{texts[language].contact}</p>
                     <p className="text-footer-links">{texts[language].phone}</p>
-                    <p className="text-footer-links">ejemplo@gmail.com</p>
+                    <p className="text-footer-links">contacto@astech.com.ar</p>
                 </div>
                 <div className='container-item-res-mobile'>
                     <div className="dropdown">
@@ -79,7 +79,7 @@ export default function Footer(){
                         </button>
                         <ul className="dropdown-menu">
                             <li><a className="dropdown-item" href="#">{texts[language].phone}</a></li>
-                            <li><a className="dropdown-item" href="#">ejemplo@gmail.com</a></li>
+                            <li><a className="dropdown-item" href="#">contacto@astech.com.ar</a></li>
                         </ul>
                     </div>
                 </div>
