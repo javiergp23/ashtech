@@ -8,21 +8,21 @@ export default function CarouselTestimonial() {
   const texts = {
     es: {
       descriptionOne:
-        "Este servicio ha cambiado mi vida por completo. ¡Muy recomendado!",
+        "Contratamos el servicio de soporte técnico de esta empresa para nuestra pequeña empresa y estamos encantados con los resultados. Nos brindan una atención personalizada y se adaptan a nuestras necesidades específicas. Gracias a su ayuda, hemos podido optimizar nuestros sistemas y mejorar la productividad de nuestro equipo. ¡Son un aliado invaluable para nuestro negocio!",
       descriptionTwo:
         "La mejor experiencia que he tenido en mucho tiempo. Excelente calidad.",
       descriptionThree:
-        "No puedo estar más feliz con los resultados. Volveré a usar este servicio.",
+        "Necesitábamos una página web moderna y funcional para nuestra empresa y el equipo de desarrollo hizo un trabajo excelente. Desde el primer momento, nos escucharon atentamente para entender nuestras necesidades y objetivos. Nos guiaron en todo el proceso de diseño y desarrollo, y nos entregaron una página web que supera nuestras expectativas. Estamos muy contentos con el resultado y hemos recibido comentarios muy positivos de nuestros clientes. ¡Recomendamos ampliamente sus servicios!.",
       descriptionFour:
         "La mejor experiencia que he tenido en mucho tiempo. Excelente calidad.",
     },
     en: {
       descriptionOne:
-        "This service has changed my life completely. Very recommended!",
+        "We hired this company's technical support service for our small business, and we are delighted with the results. They provide personalized attention and adapt to our specific needs. Thanks to their help, we have been able to optimize our systems and improve our team's productivity. They are an invaluable ally for our business!",
       descriptionTwo:
         "The best experience I have had for a long time. Excellent quality.",
       descriptionThree:
-        "I can't be more happy with the results. I will use this service again.",
+        "We needed a modern and functional website for our company, and the development team did an excellent job. From the very beginning, they listened carefully to understand our needs and goals. They guided us through the entire design and development process and delivered a website that exceeded our expectations. We are very happy with the result and have received highly positive feedback from our clients. We highly recommend their services",
       descriptionFour:
         "The best experience I have had for a long time. Excellent quality.",
     },
@@ -31,8 +31,8 @@ export default function CarouselTestimonial() {
   const testimonials = [
     {
       id: 1,
-      image: "/testimonio1.png",
-      name: "Juan Pérez",
+      image: "/testimonio-1.png",
+      name: "Conscious body",
       description: texts[language].descriptionOne,
     },
     {
@@ -43,8 +43,8 @@ export default function CarouselTestimonial() {
     },
     {
       id: 3,
-      image: "/testimonio1.png",
-      name: "Carlos Guerrero",
+      image: "/sky-tech.png",
+      name: "Skytech",
       description: texts[language].descriptionThree,
     },
     {
