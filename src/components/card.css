@@ -420,9 +420,10 @@
         padding: 55px 22px 55px 22px;
     }
     .card_img{
-        width: 110px;
-        height: 110px;
+        width: 140px;
+        height: 140px;
         margin-bottom: 15px;
+        padding: 5px;
     }
     .card_title{
         font-size: 30px;

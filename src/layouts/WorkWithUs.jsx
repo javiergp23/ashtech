@@ -17,7 +17,7 @@ export default function WorkWithUs(){
     const [uploading, setUploading] = useState(false);
     const [uploadSuccess, setUploadSuccess] = useState(false);
     const [allowCloseModal, setAllowCloseModal] = useState(false);
-    const {register, handleSubmit, formState: {errors}, setError, clearErrors, reset, setValue } = useForm();
+    const {register, handleSubmit, formState: {errors}, setError, clearErrors, reset, setValue, trigger} = useForm();
     const form = useRef();
 
     const texts = {
@@ -54,7 +54,9 @@ export default function WorkWithUs(){
         },
     };
 
-    const onSubmit = async(data) => {
+
+    const onSubmit = async(data, event) => {
+        event.preventDefault()
         console.log(data)
         if (!file) {
             setError("file", { type: "manual", message: "El archivo es obligatorio." });
@@ -65,8 +67,8 @@ export default function WorkWithUs(){
             const fileURL = await uploadFileToSupabase(file);
 
             if (!fileURL) {
-                alert("Error al subir el archivo.");
                 setUploading(false);
+                alert("Error al subir el archivo.");
                 return;
             }
             setUploading(false);
@@ -137,22 +139,11 @@ export default function WorkWithUs(){
             return;
         }
 
-        clearErrors("file");
         setFile(selectedFile);
         setValue("file", selectedFile);
+        clearErrors("file");
     };
 
-    const handleFileValidation = async (data) => {
-        if (!file) {
-            setError("file", { type: "manual", message: "El archivo es obligatorio." });
-            return;
-        }
-    
-        clearErrors("file"); // Limpiar errores previos
-        await onSubmit(data); // Ejecutar la lógica de envío solo si todo está correcto
-
-        clearErrors();
-    };
 
     return(
         <>  
@@ -189,7 +180,7 @@ export default function WorkWithUs(){
                                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div className="modal-body">
-                                    <form  className="form" encType="multipart/form-data" method="post" ref={form} onSubmit={handleSubmit(handleFileValidation)}  >
+                                    <form  className="form" encType="multipart/form-data" method="post" ref={form} onSubmit={handleSubmit(onSubmit)}  >
                                     <h1 className="modal-title fs-5 modal-title-cv" id="exampleModalLabel">{texts[language].formTitle}</h1>
                                         <div className="item-form-container">
                                             <label className='label-modal_cv' htmlFor="user_name">{texts[language].name}</label>
@@ -206,9 +197,13 @@ export default function WorkWithUs(){
                                                     maxLength: {
                                                     value: 40,
                                                     message: "El nombre no puede tener mas de 40 caracteres"
+                                                    },
+                                                    pattern: {
+                                                        value: /^[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ\s]+$/, 
+                                                        message: "El nombre solo puede contener letras"
                                                     }
                                                 })}
-
+                                                onBlur={() => trigger("user_name")}
                                             />
                                             {
                                                 errors.user_name && <p style={{color: "red", fontSize: "15px", textAlign: "left", marginLeft: "45px"}}>{errors.user_name.message}</p>
@@ -229,7 +224,7 @@ export default function WorkWithUs(){
                                                 message: "El email no es valido"
                                                 }
                                             })}
-                                            
+                                            onBlur={() => trigger("user_email")}
                                             />
                                             {
                                                 errors.user_email && <p style={{color: "red", fontSize: "15px", textAlign: "left", marginLeft: "45px"}}>{errors.user_email.message}</p>
@@ -253,7 +248,7 @@ export default function WorkWithUs(){
                                                     message: "El número no debe superar los 15 dígitos",
                                                     },
                                                 })}
-                                            
+                                                onBlur={() => trigger("user_phone")}
                                             />
                                             {
                                                 errors.user_phone && <p style={{color: "red", fontSize: "15px", textAlign: "left", marginLeft: "45px"}}>{errors.user_phone.message}</p>
@@ -269,13 +264,28 @@ export default function WorkWithUs(){
                                                 <img className='modal-img' src="/adjuntar-archivo.png" alt="adj-png" />
                                                 <label className='modal-text-adj custom-file-label' htmlFor="file">{texts[language].adj}
                                                 </label>
-                                                <input className='transparent-file-input' name='user_file' type="file" id="file" accept=".pdf"  onChange={handleFileChange}
-                                                />
-                                            </div>
-                                            {errors.user_file && <p style={{color: "red", fontSize: "15px", textAlign: "left", marginLeft: "20px"}}>{errors.user_file.message}</p>}
+                                                <input className='transparent-file-input' name='user_file' type="file" id="file" accept=".pdf" 
                                                 
-                                            {uploading && <p className='upload-message'>Subiendo archivo...</p>}
-                                            {uploadSuccess && <p className='upload-confirm' style={{ color: "green"}}> {file?.name}  ✅</p>}
+                                                {...register("file", { 
+                                                    required: file ? false : "El archivo es obligatorio",
+                                                    validate: (value) => {
+                                                        if (file) return true;
+                                                        if (value.length === 0) return "Debes subir un archivo.";
+                                                        if (!value[0].name.toLowerCase().endsWith(".pdf")) return "Solo se permiten archivos PDF.";
+                                                        return true;
+                                                    }
+                                                })}
+                                                onChange={(e) => {handleFileChange(e); trigger("user_file")}}
+                                                onBlur={() => trigger("user_file")}
+                                                />
+                                                {errors.file && <p style={{ color: "red", fontSize: "15px", textAlign: "left", marginLeft: "45px" }}>{errors.file.message}</p>}
+                                            </div>
+                                                {file && !uploading && !errors.file && (
+                                                    <p style={{ color: "green", fontSize: "15px", textAlign: "left", marginLeft: "45px" }}>
+                                                        Archivo cargado: {file.name} ✅
+                                                    </p>
+                                                )}
+
                                         </div>
                                         <div className='container-button-modal'>    
                                             <button  type='submit' className="button-work-with-us_modal" {...(allowCloseModal && { "data-bs-toggle": "modal", "data-bs-target": "#exampleModal" })} >
