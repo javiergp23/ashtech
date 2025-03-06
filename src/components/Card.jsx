@@ -29,7 +29,7 @@ export default function Card({id, title, img, paragraph, imgModal, titleModal, p
                             {titleModal}
                         </h1>
                     </div>
-                    <div>
+                    <div className='modal-titles-container-style'>
                         <h1 className="title-modal">
                             {titleModal}
                         </h1>

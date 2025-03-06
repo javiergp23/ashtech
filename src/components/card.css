@@ -78,7 +78,7 @@
     font-size: 25px;
     font-weight: 400;
     line-height: 40px;
-    text-align: left;
+    text-align: justify;
 }
 
 .button-modal{
@@ -154,11 +154,13 @@
         width: 370px;
         margin: auto;
     }
+
     .paragraph-modal{
+        width: 70%;
         font-size: 18px;
         font-weight: 400;
-        line-height: 40px;
-        text-align: left;
+        line-height: 32px;
+        text-align: justify;
         margin-top: 12px;
         margin-bottom: 10px;
         color: black;
@@ -226,10 +228,11 @@
         margin: auto;
     }
     .paragraph-modal{
+        width: 70%;
         font-size: 18px;
         font-weight: 400;
         line-height: 40px;
-        text-align: left;
+        text-align: justify;
         margin-top: 12px;
         margin-bottom: 10px;
         color: black;
@@ -307,10 +310,11 @@
         margin: auto;
     }
     .paragraph-modal{
+        width: 80%;
         font-size: 18px;
         font-weight: 400;
         line-height: 40px;
-        text-align: left;
+        text-align: justify;
         margin-top: 12px;
         margin-bottom: 10px;
         color: black;
@@ -387,11 +391,14 @@
         width: 790px;
         margin: auto;
     }
+    .modal-titles-container-style{
+        width: 450px;
+    }
     .paragraph-modal{
         font-size: 18px;
         font-weight: 400;
-        line-height: 40px;
-        text-align: left;
+        line-height: 30px;
+        text-align: justify;
         margin-top: 12px;
         margin-bottom: 10px;
         color: black;
@@ -472,8 +479,8 @@
     .paragraph-modal{
         font-size: 18px;
         font-weight: 400;
-        line-height: 40px;
-        text-align: left;
+        line-height: 35px;
+        text-align: justify;
         margin-top: 12px;
         margin-bottom: 10px;
         color: black;
@@ -552,7 +559,7 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 40px;
-        text-align: left;
+        text-align: justify;
         margin-top: 12px;
         margin-bottom: 10px;
         color: black;
@@ -629,7 +636,7 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 40px;
-        text-align: left;
+        text-align: justify;
         margin-top: 12px;
         margin-bottom: 10px;
         color: black;
