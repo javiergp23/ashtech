@@ -135,14 +135,14 @@
       }
     }
     
-    .text-container {
-      width: 230px;
+    .text-container{
+      width: 210px;
       overflow: hidden;
       height: 200px; /* Altura del texto visible */
       display: flex;
       align-items: center;
       position: relative;
-      margin-top: 30px;
+      margin-top: 25px;
     }
     
     .animated-text {
@@ -153,13 +153,16 @@
     }
   
     .animated-text-style{
-      font-size: 14px;
+      font-size: 11.5px;
+      font-weight: 700;
       font-family: Roboto Flex;
       line-height: 17px;
-      text-align: left;
     }
     .text-style{
+      width: 195px;
       text-align: justify;
+      hyphens: auto;
+      
     }
     /* Cambia el texto al mismo tiempo que gira la imagen */
     .text-animate {
@@ -247,11 +250,16 @@
     }
   
     .animated-text-style{
-      font-size: 18px;
-      font-weight: 400;
+      font-size: 15px;
+      font-weight: 700;
       font-family: Roboto Flex;
       line-height: 17px;
       text-align: left;
+    }
+    .text-style{
+      text-align: justify;
+      hyphens: auto;
+      
     }
     /* Cambia el texto al mismo tiempo que gira la imagen */
     .text-animate {
@@ -342,8 +350,8 @@
     }
   
     .animated-text-style{
-      font-size: 25px;
-      font-weight: 400;
+      font-size: 21px;
+      font-weight: 500;
       font-family: Roboto Flex;
       line-height: 28px;
       text-align: left;
@@ -352,6 +360,10 @@
     /* Cambia el texto al mismo tiempo que gira la imagen */
     .text-animate {
       animation: slideText 1s ease-in-out; 
+    }
+    .text-style{
+      text-align: justify;
+      hyphens: auto;
     }
     
     /* Animación de rotación */

@@ -6,9 +6,11 @@ export default function NavBar() {
     const { changeLanguage } = useLanguage();
     const { language } = useLanguage();
     const navbarCollapseRef = useRef(null);
+    const dropdownRef = useRef(null);
 
     useEffect(() => {
-        const closeMenu = () => {
+        const closeMenu = (e) => {
+            if (dropdownRef.current && dropdownRef.current.contains(e.target)) return;
             if (navbarCollapseRef.current) {
                 navbarCollapseRef.current.classList.remove("show");
             }
@@ -67,7 +69,7 @@ export default function NavBar() {
                             <li className="nav-item">
                                 <a className="nav-link text-link-color nav-item-responsive" href="#contact">{texts[language].contact}</a>
                             </li>
-                            <div className="nav-item dropdown dropdow-idioma">
+                            <div className="nav-item dropdown dropdow-idioma" ref={dropdownRef}>
                                 <a className="nav-link dropdown-toggle text-link-color nav-item-responsive" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 {texts[language].language}
                             </a>

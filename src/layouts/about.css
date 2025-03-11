@@ -422,7 +422,7 @@
         font-size: 28px;
         font-weight: 400;
         line-height: 30px;
-        text-align: left;
+        hyphens: auto;
         text-align: justify;
         width: 490px;
     }
