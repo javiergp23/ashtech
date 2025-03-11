@@ -1,9 +1,28 @@
+import {useEffect, useRef} from 'react';
 import './navbar.css'
 import { useLanguage } from '../context/LanguageContext'
 
 export default function NavBar() {
     const { changeLanguage } = useLanguage();
     const { language } = useLanguage();
+    const navbarCollapseRef = useRef(null);
+
+    useEffect(() => {
+        const closeMenu = () => {
+            if (navbarCollapseRef.current) {
+                navbarCollapseRef.current.classList.remove("show");
+            }
+        };
+
+        const links = document.querySelectorAll(".nav-link");
+        links.forEach(link => link.addEventListener("click", closeMenu));
+
+        return () => {
+            links.forEach(link => link.removeEventListener("click", closeMenu));
+        };
+    }, []);
+
+
     const texts = {
         es: {
             service: "Servicios",
@@ -31,7 +50,7 @@ export default function NavBar() {
                     <button className="navbar-toggler menu-burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent" ref={navbarCollapseRef}>
                         <ul className="navbar-nav links-nav links-nav-responsive mb-2 mb-lg-0">
                             <li className="nav-item ">
                                 <a className="nav-link active text-link-color nav-item-responsive" aria-current="page" href="#services">{texts[language].service}</a>

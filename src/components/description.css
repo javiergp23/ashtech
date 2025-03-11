@@ -158,6 +158,9 @@
       line-height: 17px;
       text-align: left;
     }
+    .text-style{
+      text-align: justify;
+    }
     /* Cambia el texto al mismo tiempo que gira la imagen */
     .text-animate {
       animation: slideText 1s ease-in-out; 

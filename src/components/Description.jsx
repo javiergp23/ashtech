@@ -55,7 +55,7 @@ export default function Description(){
                   />
                 </div>
                 <div className="text-container">
-                  <p className={`animated-text animated-text-style ${isAnimating ? "text-animate" : ""}`}>
+                  <p className={`animated-text animated-text-style text-style ${isAnimating ? "text-animate text-style" : ""}`}>
                     {textos[currentTextIndex]}</p>
                 </div>
             </div>
