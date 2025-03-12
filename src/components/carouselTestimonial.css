@@ -193,6 +193,32 @@
     position: absolute;
     top: -30px;
 }
+/* Botones de navegación */
+.prev-button-test, .next-button-test {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.356);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-button-test{
+  left: 10px;
+}
+
+.next-button-test{
+  right: 10px;
+}
+
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -309,6 +335,31 @@
     z-index: 4;
     position: absolute;
     top: -45px;
+}
+/* Botones de navegación */
+.prev-button-test, .next-button-test {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.233);
+  color: rgba(255, 255, 255, 0.719);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-button-test{
+  left: 10px;
+}
+
+.next-button-test{
+  right: 10px;
 }
 }
 
@@ -428,7 +479,31 @@
   position: absolute;
   top: -30px;
 }
+/* Botones de navegación */
+.prev-button-test, .next-button-test {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.233);
+  color: rgba(255, 255, 255, 0.719);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  z-index: 10;
+}
 
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-button-test{
+  left: 10px;
+}
+
+.next-button-test{
+  right: 10px;
+}
 
 }
 
@@ -549,6 +624,31 @@
   position: absolute;
   top: -30px;
 }
+/* Botones de navegación */
+.prev-button-test, .next-button-test {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.301);
+  color: rgba(255, 255, 255, 0.808);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-button-test{
+  left: 10px;
+}
+
+.next-button-test{
+  right: 10px;
+}
 }
 
  /* Pantallas de escritorio pequeñas  */
@@ -657,6 +757,31 @@
   z-index: 4;
   position: absolute;
   top: -30px;
+}
+/* Botones de navegación */
+.prev-button-test, .next-button-test {
+  position: absolute;
+  top: 34%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.39);
+  color: rgba(255, 255, 255, 0.808);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-button-test{
+  left: 10px;
+}
+
+.next-button-test{
+  right: 10px;
 }
 }
 
@@ -775,6 +900,31 @@
   position: absolute;
   top: -30px;
 }
+/* Botones de navegación */
+.prev-button-test, .next-button-test {
+  position: absolute;
+  top: 34%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.39);
+  color: rgba(255, 255, 255, 0.808);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-button-test{
+  left: 10px;
+}
+
+.next-button-test{
+  right: 10px;
+}
 } 
 @media (min-width: 1921px) and (max-width: 2560px) {
   .carousel-container-test {
@@ -839,5 +989,30 @@
     font-family: Roboto;
     line-height: 2px;
   }
+  /* Botones de navegación */
+.prev-button-test, .next-button-test {
+  position: absolute;
+  top: 34%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.39);
+  color: rgba(255, 255, 255, 0.808);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-button-test{
+  left: 10px;
+}
+
+.next-button-test{
+  right: 10px;
+}
 }
 

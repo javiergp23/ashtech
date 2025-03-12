@@ -105,6 +105,12 @@ export default function CarouselTestimonial() {
     return () => clearInterval(interval);
   }, []);
 
+  const scrollToCard = (direction) => {
+    if (!carouselRef.current) return;
+    const cardWidth = carouselRef.current.children[0].offsetWidth + 20;
+    carouselRef.current.scrollBy({ left: direction * cardWidth, behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="contenido-2">
@@ -121,6 +127,8 @@ export default function CarouselTestimonial() {
           </div>
         ))}
         </div>
+        <button className="prev-button-test" onClick={() => scrollToCard(-1)}>&#10094;</button>
+        <button className="next-button-test" onClick={() => scrollToCard(1)}>&#10095;</button>
       </div>
     </>
   );

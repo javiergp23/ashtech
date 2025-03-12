@@ -607,7 +607,7 @@
       position: absolute;
       top: 40%;
       transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.356);
       color: white;
       border: none;
       cursor: pointer;
