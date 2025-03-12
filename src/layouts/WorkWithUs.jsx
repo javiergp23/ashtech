@@ -83,7 +83,7 @@ export default function WorkWithUs(){
             setUploadSuccess(false);
             setAllowCloseModal(false);
     
-        console.log("Datos enviados:", { ...data, file });
+        console.log("Datos enviados");
        
       };
 
