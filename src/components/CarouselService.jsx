@@ -120,6 +120,20 @@ export default function Carousel() {
     }, []);
 
 
+    const handleNext = () => {
+      if (!carouselRef.current) return;
+    
+      const cardWidth = carouselRef.current.children[0].offsetWidth + 20;
+      carouselRef.current.scrollBy({ left: cardWidth, behavior: "smooth" });
+    };
+    
+    const handlePrev = () => {
+      if (!carouselRef.current) return;
+    
+      const cardWidth = carouselRef.current.children[0].offsetWidth + 20;
+      carouselRef.current.scrollBy({ left: -cardWidth, behavior: "smooth" });
+    };
+
   return (
     <>
       <div className="carousel">
@@ -139,6 +153,10 @@ export default function Carousel() {
                 />   
             </div>
           ))}
+        </div>
+        <div className="carousel-buttons">
+          <button className="prev-button" onClick={() => handlePrev()}>&#10094;</button>
+          <button className="next-button" onClick={() => handleNext()}>&#10095;</button>
         </div>
       </div>
     </>
