@@ -12,7 +12,7 @@ export default function Footer(){
             testimonials: "Testimonios",
             workwithUs: "Trabaja con nosotros",
             redes: "Redes Sociales",
-            phone: "+54 9 11 57302130"
+            phone: "+54 9 11 54597565"
         },  
         en: {
             support: "Support",
@@ -22,7 +22,7 @@ export default function Footer(){
             testimonials: "Testimonials",
             workwithUs: "Work with Us",
             redes: "Social Networks",
-            phone: "+54 9 11 57302130"
+            phone: "+54 9 11 54597565"
         },
     };
 

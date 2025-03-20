@@ -5,8 +5,8 @@ export default function About(){
     const { language } = useLanguage();
     const texts = {
         es: {
-            title: "Queremos que nos conozcas",
-            subtitle: "Te contamos nuestros valores y así, sepas quienes somos.",
+            title: "Te contamos nuestros valores",
+            subtitle: "Te contamos nuestros valores para que sepas quienes somos.",
             textOne: "Compromiso",
             textTwo: "Excelencia",
             textThree: "Innovación",
@@ -24,10 +24,10 @@ export default function About(){
             textTwo: "Excellence",
             textThree: "Innovation",
             firstText: "We are a company whose ",
-            firstTextSpan: "objective is to help our clients grow through software development",
-            firstTextSpanTwo: " at a measured pace, the  provision of qualified resources, and integrated project management.",
-            secondText: "We commit ourselves to delivering exceptional results, as we work on innovation and we are committed to our clients.",
-            thirdText: "Our goal is to be your leader in innovative technology-driven solutions to transform your company into its best version.",
+            firstTextSpan: "goal is to help our clients grow by using our customized software solutions,",
+            firstTextSpanTwo: " qualified resources and integrated project management.",
+            secondText: "We focus on delivering exceptional results, as we are committed to our clients and open to innovation.",
+            thirdText: "We can help you to achieve your company's best version.",
             fourthText: "We are here to help you create the success of your dreams.",
         },
     };

@@ -10,21 +10,21 @@ export default function CarouselTestimonial() {
       descriptionOne:
         "Contratamos el servicio de soporte técnico de esta empresa para nuestra pequeña empresa y estamos encantados con los resultados. Nos brindan una atención personalizada y se adaptan a nuestras necesidades específicas. Gracias a su ayuda, hemos podido optimizar nuestros sistemas y mejorar la productividad de nuestro equipo. ¡Son un aliado invaluable para nuestro negocio!",
       descriptionTwo:
-        "La mejor experiencia que he tenido en mucho tiempo. Excelente calidad.",
+        "Lo que más valoro de esta empresa es su capacidad para ofrecer soluciones a medida y su enfoque proactivo. Cada vez que surge un desafío tecnológico, ellos están allí para ofrecer las mejores recomendaciones y ejecutar de forma rápida. Definitivamente, los recomiendo a cualquier empresa que busque transformar su infraestructura IT.",
       descriptionThree:
-        "Necesitábamos una página web moderna y funcional para nuestra empresa y el equipo de desarrollo hizo un trabajo excelente. Desde el primer momento, nos escucharon atentamente para entender nuestras necesidades y objetivos. Nos guiaron en todo el proceso de diseño y desarrollo, y nos entregaron una página web que supera nuestras expectativas. Estamos muy contentos con el resultado y hemos recibido comentarios muy positivos de nuestros clientes. ¡Recomendamos ampliamente sus servicios!.",
+        "Contar con los servicios de esta empresa para la selección de personal ha sido una de las mejores decisiones que hemos tomado. Su proceso de reclutamiento es exhaustivo y altamente personalizado, lo que nos permitió encontrar los perfiles ideales para cada puesto. El equipo no solo entiende nuestras necesidades técnicas, sino también la cultura de nuestra empresa, lo que garantiza que los candidatos seleccionados se integren perfectamente. Gracias a su apoyo, hemos fortalecido nuestro equipo con profesionales altamente capacitados y comprometidos.",
       descriptionFour:
-        "La mejor experiencia que he tenido en mucho tiempo. Excelente calidad.",
+        "Nos acercamos a esta empresa con la idea de desarrollar una aplicación móvil que mejorara la experiencia de nuestros usuarios. Desde el primer día, su equipo mostró un enfoque profesional y una gran comprensión de nuestras necesidades. El proceso de desarrollo fue ágil, con una comunicación constante que nos permitió estar al tanto de cada etapa. El resultado final superó nuestras expectativas: una app intuitiva, eficiente y muy bien diseñada. Gracias a ellos, ahora contamos con una herramienta que ha mejorado significativamente la interacción con nuestros clientes.",
     },
     en: {
       descriptionOne:
         "We hired this company's technical support service for our small business, and we are delighted with the results. They provide personalized attention and adapt to our specific needs. Thanks to their help, we have been able to optimize our systems and improve our team's productivity. They are an invaluable ally for our business!",
       descriptionTwo:
-        "The best experience I have had for a long time. Excellent quality.",
+        "What I value most about this company is its ability to offer tailored solutions and its proactive approach. Whenever a technological challenge arises, they are there to offer the best recommendations and execute quickly. I definitely recommend them to any company looking to transform its IT infrastructure.",
       descriptionThree:
-        "We needed a modern and functional website for our company, and the development team did an excellent job. From the very beginning, they listened carefully to understand our needs and goals. They guided us through the entire design and development process and delivered a website that exceeded our expectations. We are very happy with the result and have received highly positive feedback from our clients. We highly recommend their services",
+        "Using this company for our recruitment services has been one of the best decisions we've ever made. Their recruitment process is thorough and highly personalized, allowing us to find the ideal profiles for each position. The team understands not only our technical needs but also our company culture, ensuring that the selected candidates fit in perfectly. Thanks to their support, we've strengthened our team with highly trained and committed professionals.",
       descriptionFour:
-        "The best experience I have had for a long time. Excellent quality.",
+        "We approached this company with the idea of developing a mobile app that would improve our users' experience. From day one, their team demonstrated a professional approach and a deep understanding of our needs. The development process was agile, with constant communication that allowed us to stay informed at every stage. The end result exceeded our expectations: an intuitive, efficient, and beautifully designed app. Thanks to them, we now have a tool that has significantly improved our interaction with our customers.",
     },
   };
 
@@ -37,7 +37,7 @@ export default function CarouselTestimonial() {
     },
     {
       id: 2,
-      image: "/testimonio2.png",
+      image: "/testimonio4.png",
       name: "Sofia Montiel",
       description: texts[language].descriptionTwo,
     },
@@ -49,7 +49,7 @@ export default function CarouselTestimonial() {
     },
     {
       id: 4,
-      image: "/testimonio2.png",
+      image: "/testimonio3.png",
       name: "María González",
       description: texts[language].descriptionFour,
     },

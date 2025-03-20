@@ -18,7 +18,7 @@ export default function HeroSection() {
             subtitle: "The technology you need, now closer to you.",
             button: "Our services",
             titleTwo: "Our commitment",
-            subtitleTwo: "Is with you",
+            subtitleTwo: "is with you",
 
         },
     };

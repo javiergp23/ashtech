@@ -133,7 +133,7 @@ export default function Contact(){
                     </div>
                     <div className="item-form-container item-form-container_contact">
                         <label htmlFor="phone">{texts[language].telefono}</label>
-                        <input type="text" name='user_phone' placeholder="    011 56749288" className={`input ${errors.user_phone ? 'input-error' : ''}`}
+                        <input type="number" name='user_phone' placeholder="    011 56749288" className={`input ${errors.user_phone ? 'input-error' : ''}`}
                         onBlur={handleInputChange}
                         onInput={handleInputChange}/>
                         {errors.user_phone && <p style={{color: "red", textAlign: "center", fontSize: "15px",}} className="error-text">{errors.user_phone}</p>}

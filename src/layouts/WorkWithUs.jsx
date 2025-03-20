@@ -22,10 +22,10 @@ export default function WorkWithUs(){
 
     const texts = {
         es: {
-            title: "¿Te gustaria trabajar con nosotros?",
-            subtitle: "Unite a un equipo innovador y dinamico donde tu crecimiento profesional es una prioridad.",
-            paragraphOne: "Valoramos tu creatividad, talento y tus ganas de aprender, aqui tendras la oportunidad de marcar la diferencia.",
-            paragraphTwo: "Te invitamos a ser parte y que crees la carrera que deseas.",
+            title: "¿Te gustaría trabajar con nosotros?",
+            subtitle: "Unite a un equipo innovador y dinámico donde tu crecimiento profesional es una prioridad.",
+            paragraphOne: "Valoramos tu creatividad, talentos y ganas de aprender, aquí tendrás la oportunidad de marcar la diferencia.",
+            paragraphTwo: "Te invitamos a ser parte y crear la carrera que deseas.",
             sum:  "¡Sumate a nuestro equipo!",
             button: "Adjuntar CV",
             formTitle: "Crea la carrera de tus sueños",
