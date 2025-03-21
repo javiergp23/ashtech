@@ -51,7 +51,7 @@ export default function Contact(){
             if (value.trim().length < 3) {
                 error = texts[language].errorName;
             } else if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/.test(value)) {
-                error = 'El nombre solo puede contener letras y espacios.';
+                error = texts[language].errorName;
              }
         }
 
@@ -61,7 +61,7 @@ export default function Contact(){
 
         if (name === 'user_phone') {
             if (value && !/^\d{8,}$/.test(value)) {
-             error = 'El teléfono solo puede contener números y debe tener al menos 8 dígitos.';
+                error = texts[language].errorPhone;
              }
         }
 

@@ -751,7 +751,7 @@
   scroll-snap-align: center;
   overflow: visible;
   position: relative;
-  margin-top: 30px;
+  margin-top: 55px;
 }
 
 .img-card-2{
@@ -842,11 +842,12 @@
   .testimonial-description{
     width: 740px;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 20px;
     margin: 55px 0 45px 0;
     font-family: Roboto flex;
+    text-align: justify;
   }
   .testimonial-name{
     color: rgba(255, 146, 64, 1);
@@ -884,7 +885,7 @@
   background-color: #ffffff1a;
   border: 1.5px solid rgba(255, 146, 64, 1);
   border-radius: 30px;
-  min-height: 280px;
+  min-height: 350px;
   min-width: 800px;
   display: flex;
   flex-direction: column;
@@ -893,7 +894,7 @@
   scroll-snap-align: center;
   overflow: visible;
   position: relative;
-  margin-top: 30px;
+  margin-top: 58px;
 }
 
 .img-card-2{

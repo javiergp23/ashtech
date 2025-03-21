@@ -117,7 +117,7 @@ export default function Carousel() {
       let interval = setInterval(autoScroll, 3000);
   
       return () => clearInterval(interval);
-    }, []);
+    }, [language]);
 
 
     const handleNext = () => {
@@ -137,7 +137,7 @@ export default function Carousel() {
   return (
     <>
       <div className="carousel">
-        <div className="carousel-container" ref={carouselRef}>
+        <div className="carousel-container" ref={carouselRef} key={language}>
           {services.map((service, index) => (
             <div className={`card-container ${index === 0 ? "active" : ""}`} key={service.id}>
               <Card 
