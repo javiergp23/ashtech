@@ -116,7 +116,7 @@ input::placeholder{
         width: 100%;
     }
     input{
-        width: 320px;
+        width: 280px;
         margin-left: 5%;
     }
     label{
@@ -126,10 +126,10 @@ input::placeholder{
     }
 
     .boton-container{
-        width: 320px;
+        width: 300px;
         display: flex;
         justify-content: flex-end;
-        margin-left: 7.5%;
+        margin-left: 0%;
         
     }
     .button-form{
@@ -143,7 +143,7 @@ input::placeholder{
 
     }
     .label-menssage{
-        width: 320px;
+        width: 280px;
         height: 100px;
         overflow-wrap: break-word;
         word-wrap: break-word;

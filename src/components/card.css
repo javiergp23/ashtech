@@ -156,7 +156,7 @@
     }
 
     .paragraph-modal{
-        width: 70%;
+        width: 90%;
         font-size: 18px;
         font-weight: 400;
         line-height: 32px;
@@ -228,7 +228,7 @@
         margin: auto;
     }
     .paragraph-modal{
-        width: 70%;
+        width: 100%;
         font-size: 18px;
         font-weight: 400;
         line-height: 40px;
@@ -306,11 +306,11 @@
     .modal-container-style{
         display: flex;
         flex-direction: column;
-        width: 370px;
+        width: 480px;
         margin: auto;
     }
     .paragraph-modal{
-        width: 80%;
+        width: 100%;
         font-size: 18px;
         font-weight: 400;
         line-height: 40px;
